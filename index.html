@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>İnteraktif Medya Kütüphanesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container header-content">
+            <div class="logo-area">
+                <h1>Medya<span class="highlight">Kütüphanesi</span></h1>
+            </div>
+
+            <nav class="main-nav">
+                <button class="nav-btn active" data-tab="all">Tümü</button>
+                <button class="nav-btn" data-tab="movie">Filmler</button>
+                <button class="nav-btn" data-tab="series">Diziler</button>
+                <button class="nav-btn" data-tab="book">Kitaplar</button>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Film, dizi veya kitap ara...">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <button class="fav-icon-btn" data-tab="favorites" title="Favorilerim">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sub-header container">
+        <div class="filter-container" id="filterContainer">
+            <select id="categoryFilter">
+                <option value="all">Tüm Kategoriler</option>
+            </select>
+            <select id="yearFilter">
+                <option value="all">Tüm Yıllar</option>
+            </select>
+        </div>
+    </div>
+
+    <main class="container">
+        <section id="mediaGrid" class="grid-container">
+            <!-- Cards will be injected here by JS -->
+        </section>
+    </main>
+
+    <!-- Modal for Details -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Medya Görseli">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Başlık</h2>
+                    <p class="meta-info">
+                        <span id="modalYear">Yıl</span> |
+                        <span id="modalCategory">Kategori</span> |
+                        <span id="modalType">Tür</span>
+                    </p>
+                    <p class="rating">Puan: <span id="modalRating"></span>/10</p>
+                    <p id="modalSummary" class="summary">Özet...</p>
+                    <div class="people-info">
+                        <p><strong>Yönetmen/Yazar:</strong> <span id="modalDirector"></span></p>
+                        <p><strong>Oyuncular/Karakterler:</strong> <span id="modalCast"></span></p>
+                    </div>
+                    <button id="modalFavBtn" class="fav-btn">Favorilere Ekle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 İnteraktif Medya Kütüphanesi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
