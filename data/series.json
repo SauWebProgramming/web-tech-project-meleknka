@@ -1,0 +1,82 @@
+[
+    {
+        "id": 101,
+        "title": "Breaking Bad",
+        "type": "series",
+        "year": 2008,
+        "category": "Crime",
+        "director": "Vince Gilligan",
+        "cast": [
+            "Bryan Cranston",
+            "Aaron Paul",
+            "Anna Gunn"
+        ],
+        "summary": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+        "rating": 9.5,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
+    },
+    {
+        "id": 102,
+        "title": "Attack on Titan",
+        "type": "series",
+        "year": 2013,
+        "category": "Anime",
+        "director": "Tetsurô Araki",
+        "cast": [
+            "Yûki Kaji",
+            "Yui Ishikawa",
+            "Marina Inoue"
+        ],
+        "summary": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        "rating": 9,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8C5gDxV5b1x0ZOgM5bO3l4h8j7i.jpg"
+    },
+    {
+        "id": 103,
+        "title": "Game of Thrones",
+        "type": "series",
+        "year": 2011,
+        "category": "Action",
+        "director": "David Benioff",
+        "cast": [
+            "Emilia Clarke",
+            "Peter Dinklage",
+            "Kit Harington"
+        ],
+        "summary": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        "rating": 9.3,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9TWA754QnCKqQzSjaLo.jpg"
+    },
+    {
+        "id": 104,
+        "title": "Death Note",
+        "type": "series",
+        "year": 2006,
+        "category": "Anime",
+        "director": "Tetsurô Araki",
+        "cast": [
+            "Mamoru Miyano",
+            "Brad Swaile",
+            "Vincent Tong"
+        ],
+        "summary": "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+        "rating": 9,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tCzfDqUq3rWjGgG5tJ5h5b5f5.jpg"
+    },
+    {
+        "id": 105,
+        "title": "Stranger Things",
+        "type": "series",
+        "year": 2016,
+        "category": "Sci-Fi",
+        "director": "The Duffer Brothers",
+        "cast": [
+            "Millie Bobby Brown",
+            "Finn Wolfhard",
+            "Winona Ryder"
+        ],
+        "summary": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+        "rating": 8.7,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+    }
+]

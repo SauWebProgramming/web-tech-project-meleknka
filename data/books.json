@@ -1,0 +1,258 @@
+[
+    {
+        "id": 201,
+        "title": "Dune",
+        "type": "book",
+        "year": 1965,
+        "category": "Bilim Kurgu",
+        "director": "Frank Herbert",
+        "cast": [
+            "Paul Atreides",
+            "Lady Jessica",
+            "Baron Harkonnen"
+        ],
+        "summary": "Paul Atreides'in, evrenin en değerli maddesi olan 'baharat'ın tek kaynağı olan çöl gezegeni Arrakis'teki destansı yolculuğu.",
+        "rating": 9.2,
+        "image": "https://placehold.co/600x900?text=Dune"
+    },
+    {
+        "id": 202,
+        "title": "1984",
+        "type": "book",
+        "year": 1949,
+        "category": "Distopya",
+        "director": "George Orwell",
+        "cast": [
+            "Winston Smith",
+            "Büyük Birader",
+            "Julia"
+        ],
+        "summary": "Totaliter bir rejim altında, gerçeğin manipüle edildiği ve bireyselliğin yok edildiği karanlık bir geleceğin tasviri.",
+        "rating": 9,
+        "image": "https://placehold.co/600x900?text=1984"
+    },
+    {
+        "id": 203,
+        "title": "Hobbit",
+        "type": "book",
+        "year": 1937,
+        "category": "Fantastik",
+        "director": "J.R.R. Tolkien",
+        "cast": [
+            "Bilbo Baggins",
+            "Gandalf",
+            "Thorin Meşekalkan"
+        ],
+        "summary": "Konforuna düşkün bir hobbit olan Bilbo Baggins'in, bir grup cüceyle birlikte ejderha Smaug'un hazinesini geri almak için çıktığı macera.",
+        "rating": 8.8,
+        "image": "https://placehold.co/600x900?text=Hobbit"
+    },
+    {
+        "id": 204,
+        "title": "Harry Potter ve Felsefe Taşı",
+        "type": "book",
+        "year": 1997,
+        "category": "Fantastik",
+        "director": "J.K. Rowling",
+        "cast": [
+            "Harry Potter",
+            "Hermione Granger",
+            "Ron Weasley"
+        ],
+        "summary": "Yetim bir çocuk olan Harry Potter, büyücü olduğunu öğrenir ve Hogwarts Cadılık ve Büyücülük Okulu'na davet edilir.",
+        "rating": 8.9,
+        "image": "https://placehold.co/600x900?text=Harry%20Potter%20ve%20Felsefe%20Ta%C5%9F%C4%B1"
+    },
+    {
+        "id": 205,
+        "title": "Muhteşem Gatsby",
+        "type": "book",
+        "year": 1925,
+        "category": "Klasik",
+        "director": "F. Scott Fitzgerald",
+        "cast": [
+            "Jay Gatsby",
+            "Nick Carraway",
+            "Daisy Buchanan"
+        ],
+        "summary": "Gizemli milyoner Jay Gatsby'nin, geçmişteki aşkı Daisy Buchanan'a duyduğu saplantılı tutku ve Amerikan Rüyası'nın çöküşü.",
+        "rating": 8.5,
+        "image": "https://placehold.co/600x900?text=Muhte%C5%9Fem%20Gatsby"
+    },
+    {
+        "id": 206,
+        "title": "Suç ve Ceza",
+        "type": "book",
+        "year": 1866,
+        "category": "Klasik",
+        "director": "Fyodor Dostoyevski",
+        "cast": [
+            "Rodion Raskolnikov",
+            "Sonya Marmeladova",
+            "Porfiri Petroviç"
+        ],
+        "summary": "Yoksul bir eski öğrenci olan Raskolnikov, tefeci bir kadını öldürmeyi planlar ve bu eylemin ahlaki sonuçlarıyla yüzleşir.",
+        "rating": 9.4,
+        "image": "https://placehold.co/600x900?text=Su%C3%A7%20ve%20Ceza"
+    },
+    {
+        "id": 207,
+        "title": "Sefiller",
+        "type": "book",
+        "year": 1862,
+        "category": "Klasik",
+        "director": "Victor Hugo",
+        "cast": [
+            "Jean Valjean",
+            "Javert",
+            "Cosette"
+        ],
+        "summary": "Eski bir mahkum olan Jean Valjean'ın kefaret arayışı ve 19. yüzyıl Fransa'sındaki toplumsal adaletsizliklere karşı mücadelesi.",
+        "rating": 9.2,
+        "image": "https://placehold.co/600x900?text=Sefiller"
+    },
+    {
+        "id": 208,
+        "title": "Anna Karenina",
+        "type": "book",
+        "year": 1877,
+        "category": "Klasik",
+        "director": "Lev Tolstoy",
+        "cast": [
+            "Anna Karenina",
+            "Alexei Vronsky",
+            "Konstantin Levin"
+        ],
+        "summary": "Evli bir aristokrat olan Anna Karenina'nın Kont Vronsky ile yaşadığı yasak aşk ve bunun yıkıcı sonuçları.",
+        "rating": 9.1,
+        "image": "https://placehold.co/600x900?text=Anna%20Karenina"
+    },
+    {
+        "id": 209,
+        "title": "Yabancı",
+        "type": "book",
+        "year": 1942,
+        "category": "Felsefe",
+        "director": "Albert Camus",
+        "cast": [
+            "Meursault",
+            "Raymond Sintes",
+            "Marie Cardona"
+        ],
+        "summary": "Topluma ve hayata yabancılaşmış Meursault'nun, işlediği bir cinayetten sonraki kayıtsızlığı ve absürdizm üzerine bir anlatı.",
+        "rating": 8.7,
+        "image": "https://placehold.co/600x900?text=Yabanc%C4%B1"
+    },
+    {
+        "id": 210,
+        "title": "Dönüşüm",
+        "type": "book",
+        "year": 1915,
+        "category": "Klasik",
+        "director": "Franz Kafka",
+        "cast": [
+            "Gregor Samsa",
+            "Grete Samsa",
+            "Bay Samsa"
+        ],
+        "summary": "Gregor Samsa bir sabah uyandığında kendini dev bir böceğe dönüşmüş olarak bulur ve ailesiyle olan ilişkisi geri dönülmez bir şekilde değişir.",
+        "rating": 8.9,
+        "image": "https://placehold.co/600x900?text=D%C3%B6n%C3%BC%C5%9F%C3%BCm"
+    },
+    {
+        "id": 211,
+        "title": "Çalıkuşu",
+        "type": "book",
+        "year": 1922,
+        "category": "Türk Klasikleri",
+        "director": "Reşat Nuri Güntekin",
+        "cast": [
+            "Feride",
+            "Kamran",
+            "Munise"
+        ],
+        "summary": "İstanbullu genç öğretmen Feride'nin, Anadolu'nun çeşitli köylerinde öğretmenlik yaparken yaşadığı zorluklar ve aşk acısı.",
+        "rating": 9.3,
+        "image": "https://placehold.co/600x900?text=%C3%87al%C4%B1ku%C5%9Fu"
+    },
+    {
+        "id": 212,
+        "title": "İnce Memed",
+        "type": "book",
+        "year": 1955,
+        "category": "Türk Klasikleri",
+        "director": "Yaşar Kemal",
+        "cast": [
+            "İnce Memed",
+            "Hatçe",
+            "Abdi Ağa"
+        ],
+        "summary": "Toroslar'da yaşayan İnce Memed'in, ağalık düzenine ve haksızlığa karşı başkaldırarak eşkıya olmasının destansı hikayesi.",
+        "rating": 9.5,
+        "image": "https://placehold.co/600x900?text=%C4%B0nce%20Memed"
+    },
+    {
+        "id": 213,
+        "title": "Saatleri Ayarlama Enstitüsü",
+        "type": "book",
+        "year": 1961,
+        "category": "Türk Klasikleri",
+        "director": "Ahmet Hamdi Tanpınar",
+        "cast": [
+            "Hayri İrdal",
+            "Halit Ayarcı",
+            "Pakize"
+        ],
+        "summary": "Doğu ile Batı arasında sıkışmış Türk toplumunun modernleşme sürecini, absürd bir kurum olan Saatleri Ayarlama Enstitüsü üzerinden anlatan hiciv.",
+        "rating": 9.4,
+        "image": "https://placehold.co/600x900?text=Saatleri%20Ayarlama%20Enstit%C3%BCs%C3%BC"
+    },
+    {
+        "id": 214,
+        "title": "Kürk Mantolu Madonna",
+        "type": "book",
+        "year": 1943,
+        "category": "Türk Klasikleri",
+        "director": "Sabahattin Ali",
+        "cast": [
+            "Raif Efendi",
+            "Maria Puder",
+            "Rasim"
+        ],
+        "summary": "İçine kapanık Raif Efendi'nin gençliğinde Berlin'de yaşadığı unutulmaz aşkın ve bu aşkın hayatında bıraktığı derin izlerin hikayesi.",
+        "rating": 9.2,
+        "image": "https://placehold.co/600x900?text=K%C3%BCrk%20Mantolu%20Madonna"
+    },
+    {
+        "id": 215,
+        "title": "Tutunamayanlar",
+        "type": "book",
+        "year": 1972,
+        "category": "Türk Klasikleri",
+        "director": "Oğuz Atay",
+        "cast": [
+            "Selim Işık",
+            "Turgut Özben",
+            "Süleyman Kargı"
+        ],
+        "summary": "İntihar eden arkadaşı Selim Işık'ın geçmişini araştıran Turgut Özben'in, modern hayata uyum sağlayamayan bireylerin dünyasına yolculuğu.",
+        "rating": 9.1,
+        "image": "https://placehold.co/600x900?text=Tutunamayanlar"
+    },
+    {
+        "id": 216,
+        "title": "Aşk-ı Memnu",
+        "type": "book",
+        "year": 1900,
+        "category": "Türk Klasikleri",
+        "director": "Halid Ziya Uşaklıgil",
+        "cast": [
+            "Bihter",
+            "Behlül",
+            "Adnan Bey"
+        ],
+        "summary": "Zengin bir adamla evlenen genç Bihter'in, kocasının yeğeni Behlül ile yaşadığı yasak aşk ve bu aşkın getirdiği trajedi.",
+        "rating": 8.8,
+        "image": "https://placehold.co/600x900?text=A%C5%9Fk-%C4%B1%20Memnu"
+    }
+]
