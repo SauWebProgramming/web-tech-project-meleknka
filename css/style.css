@@ -8,11 +8,11 @@
     --text-secondary: #94a3b8;
     /* Slate 400 */
     --accent-color: #38bdf8;
-    /* Sky 400 - Vibrant Blue/Cyan */
+    /* Sky 400 */
     --accent-hover: #0ea5e9;
     /* Sky 500 */
     --highlight: #f472b6;
-    /* Pink for logo highlight */
+    /* Pink */
     --btn-bg: #334155;
     /* Slate 700 */
     --btn-hover: #475569;
@@ -21,6 +21,41 @@
     --font-main: 'Outfit', sans-serif;
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Dynamic Variables */
+    --header-bg: rgba(15, 23, 42, 0.95);
+    --header-border: #334155;
+    --card-border: transparent;
+    --input-bg: #1e293b;
+    --input-border: #334155;
+}
+
+body.light-mode {
+    --bg-color: #f1f5f9;
+    /* Slate 100 */
+    --card-bg: #ffffff;
+    /* White */
+    --text-primary: #0f172a;
+    /* Slate 900 */
+    --text-secondary: #475569;
+    /* Slate 600 */
+    --accent-color: #0369a1;
+    /* Sky 700 */
+    --accent-hover: #0c4a6e;
+    /* Sky 900 */
+    --btn-bg: #e2e8f0;
+    /* Slate 200 */
+    --btn-hover: #cbd5e1;
+    /* Slate 300 */
+    --modal-bg: #ffffff;
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+    /* Light Mode Overrides */
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --header-border: #e2e8f0;
+    --card-border: #e2e8f0;
+    --input-bg: #f8fafc;
+    --input-border: #cbd5e1;
 }
 
 * {
@@ -44,13 +79,14 @@ body {
 
 /* Header */
 header {
-    background-color: rgba(15, 23, 42, 0.95);
+    background-color: var(--header-bg);
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid var(--header-border);
     backdrop-filter: blur(10px);
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .header-content {
@@ -69,6 +105,7 @@ header {
 .highlight {
     color: var(--accent-color);
 }
+
 
 /* Navigation */
 .main-nav {
@@ -115,8 +152,8 @@ header {
 .search-bar input {
     padding: 10px 15px 10px 40px;
     border-radius: 25px;
-    border: 1px solid #334155;
-    background-color: #1e293b;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
     color: var(--text-primary);
     width: 250px;
     font-family: inherit;
@@ -160,6 +197,31 @@ header {
     /* Red for heart */
     background-color: rgba(239, 68, 68, 0.1);
     transform: scale(1.1);
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.theme-btn:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(15deg);
+}
+
+body.light-mode .theme-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* Sub Header (Filters) */
@@ -207,7 +269,7 @@ select:focus {
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-sm);
-    border: 1px solid transparent;
+    border: 1px solid var(--card-border);
     position: relative;
 }
 

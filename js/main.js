@@ -4,12 +4,27 @@ import { renderGrid, closeModal, populateFilters } from './ui.js';
 let currentData = [];
 let currentTab = 'all';
 
+// Theme Logic
+const themeToggleBtn = document.getElementById('themeToggle');
+const body = document.body;
+const icon = themeToggleBtn.querySelector('i');
+
+// Check Local Storage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     // Initial Load
     await loadData('all');
 
     // Event Listeners
     setupNavigation();
+    setupThemeToggle();
+
     setupSearchAndFilter();
     setupModal();
 
@@ -62,6 +77,22 @@ function setupNavigation() {
         favBtn.classList.add('active');
 
         loadData('favorites');
+    });
+}
+
+function setupThemeToggle() {
+    themeToggleBtn.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+
+        if (body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            localStorage.setItem('theme', 'dark');
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
     });
 }
 
