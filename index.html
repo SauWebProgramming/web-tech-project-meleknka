@@ -44,14 +44,9 @@
     </header>
 
     <div class="sub-header container">
-        <div class="filter-container" id="filterContainer">
-            <select id="categoryFilter">
-                <option value="all">Tüm Kategoriler</option>
-            </select>
-            <select id="yearFilter">
-                <option value="all">Tüm Yıllar</option>
-            </select>
-        </div>
+        <button id="filterToggleBtn" class="filter-toggle-btn">
+            <i class="fa-solid fa-filter"></i> Filtrele
+        </button>
     </div>
 
     <main class="container">
@@ -59,6 +54,41 @@
             <!-- Cards will be injected here by JS -->
         </section>
     </main>
+
+    <!-- Side Filter Panel -->
+    <aside id="filterPanel" class="filter-panel">
+        <div class="filter-header">
+            <h3>Filtreler</h3>
+            <button id="closeFilterBtn" class="close-filter-btn">&times;</button>
+        </div>
+        <div class="filter-body">
+            <!-- Sections will be populated dynamically or static structure here -->
+            <div class="filter-section">
+                <h4>Kategoriler</h4>
+                <div id="filterCategories" class="filter-options"></div>
+            </div>
+            <div class="filter-section">
+                <h4>Yıl</h4>
+                <div id="filterYears" class="filter-options"></div>
+            </div>
+            <div class="filter-section">
+                <h4 id="directorLabel">Yönetmen / Yazar</h4>
+                <div id="filterDirectors" class="filter-options"></div>
+            </div>
+            <div class="filter-section">
+                <h4>Puan</h4>
+                <div class="filter-options">
+                    <label><input type="checkbox" name="rating" value="9"> 9+ Puan</label>
+                    <label><input type="checkbox" name="rating" value="8"> 8+ Puan</label>
+                    <label><input type="checkbox" name="rating" value="7"> 7+ Puan</label>
+                </div>
+            </div>
+        </div>
+        <div class="filter-footer">
+            <button id="applyFiltersBtn" class="btn-apply">Uygula</button>
+            <button id="clearFiltersBtn" class="btn-clear">Temizle</button>
+        </div>
+    </aside>
 
     <!-- Modal for Details -->
     <div id="detailModal" class="modal">
@@ -86,6 +116,8 @@
             </div>
         </div>
     </div>
+
+    <div id="overlay" class="overlay"></div>
 
     <footer>
         <p>&copy; 2025 İnteraktif Medya Kütüphanesi. Tüm hakları saklıdır.</p>

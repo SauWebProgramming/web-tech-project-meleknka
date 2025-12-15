@@ -102,28 +102,56 @@ export function closeModal() {
     detailModal.classList.remove('show');
 }
 
-export function populateFilters(data) {
-    const categorySelect = document.getElementById('categoryFilter');
-    const yearSelect = document.getElementById('yearFilter');
+// Side Panel Logic
+export function toggleFilterPanel(show) {
+    const panel = document.getElementById('filterPanel');
+    const overlay = document.getElementById('overlay');
+    if (show) {
+        panel.classList.add('open');
+        overlay.classList.add('active');
+    } else {
+        panel.classList.remove('open');
+        overlay.classList.remove('active');
+    }
+}
 
-    // Reset filters
-    categorySelect.innerHTML = '<option value="all">Tüm Kategoriler</option>';
-    yearSelect.innerHTML = '<option value="all">Tüm Yıllar</option>';
+export function populateFilterPanel(data) {
+    const categoryContainer = document.getElementById('filterCategories');
+    const yearContainer = document.getElementById('filterYears');
+    const directorContainer = document.getElementById('filterDirectors');
+    const directorLabel = document.getElementById('directorLabel');
 
+    // Clear existing
+    categoryContainer.innerHTML = '';
+    yearContainer.innerHTML = '';
+    directorContainer.innerHTML = '';
+
+    if (!data || data.length === 0) return;
+
+    // Determine Director vs Author label
+    const isBook = data[0].type === 'book';
+    directorLabel.innerText = isBook ? 'Yazar' : 'Yönetmen';
+
+    // Extract unique values
     const categories = [...new Set(data.map(item => item.category))].sort();
     const years = [...new Set(data.map(item => item.year))].sort((a, b) => b - a);
 
-    categories.forEach(cat => {
-        const option = document.createElement('option');
-        option.value = cat;
-        option.innerText = cat;
-        categorySelect.appendChild(option);
-    });
+    // Director field is sometimes 'author' conceptually but stored as 'director' in JSON based on my analysis of books.json
+    // Actually books.json uses 'director' field for author.
+    const directors = [...new Set(data.map(item => item.director))].sort();
 
-    years.forEach(year => {
-        const option = document.createElement('option');
-        option.value = year;
-        option.innerText = year;
-        yearSelect.appendChild(option);
-    });
+    // Helper to create checkbox
+    const createCheckbox = (value, container, name) => {
+        const label = document.createElement('label');
+        label.innerHTML = `
+            <input type="checkbox" name="${name}" value="${value}">
+            ${value}
+        `;
+        container.appendChild(label);
+    };
+
+    categories.forEach(cat => createCheckbox(cat, categoryContainer, 'category'));
+    years.forEach(year => createCheckbox(year, yearContainer, 'year'));
+    directors.forEach(director => createCheckbox(director, directorContainer, 'director'));
 }
+

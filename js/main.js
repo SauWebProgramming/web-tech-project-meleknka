@@ -1,5 +1,5 @@
 import { fetchData, getFavorites } from './data.js';
-import { renderGrid, closeModal, populateFilters } from './ui.js';
+import { renderGrid, closeModal, populateFilterPanel, toggleFilterPanel } from './ui.js';
 
 let currentData = [];
 let currentTab = 'all';
@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             loadData('favorites');
         }
     });
+
+    // Close panel on resize if screen becomes large (optional, but good for UX)
+    // Actually our panel is useful on all screens, so no need to auto-close.
 });
 
 async function loadData(type) {
@@ -45,9 +48,13 @@ async function loadData(type) {
         currentData = await fetchData(type);
     }
 
-    // Reset filters when switching tabs
+    // Reset search
     document.getElementById('searchInput').value = '';
-    populateFilters(currentData);
+
+    // Populate Side Panel
+    populateFilterPanel(currentData);
+
+    // Initial Render
     renderGrid(currentData);
 }
 
@@ -98,28 +105,98 @@ function setupThemeToggle() {
 
 function setupSearchAndFilter() {
     const searchInput = document.getElementById('searchInput');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const yearFilter = document.getElementById('yearFilter');
+    const filterToggleBtn = document.getElementById('filterToggleBtn');
+    const closeFilterBtn = document.getElementById('closeFilterBtn');
+    const overlay = document.getElementById('overlay');
+    const applyFiltersBtn = document.getElementById('applyFiltersBtn');
+    const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
+    // Toggle Panel
+    filterToggleBtn.addEventListener('click', () => toggleFilterPanel(true));
+    closeFilterBtn.addEventListener('click', () => toggleFilterPanel(false));
+    overlay.addEventListener('click', () => {
+        toggleFilterPanel(false);
+        // Also close modal if open? Overlay is shared? 
+        // Current HTML puts overlay separately. 
+        // Modal has its own backdrop logic usually, but let's check style. 
+        // css line 356: .modal { ... background-color: rgba(0,0,0,0.85) } 
+        // Modal covers everything including overlay.
+        // So this overlay is just for the side panel.
+    });
+
+    // Filter Logic
     const filterData = () => {
         const query = searchInput.value.toLowerCase();
-        const category = categoryFilter.value;
-        const year = yearFilter.value;
+
+        // Get checked values from panel
+        const getCheckedValues = (name) => {
+            return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(cb => cb.value);
+        };
+
+        const categories = getCheckedValues('category');
+        const years = getCheckedValues('year');
+        const directors = getCheckedValues('director');
+        const ratings = getCheckedValues('rating').map(Number); // e.g. [9, 8]
 
         const filtered = currentData.filter(item => {
+            // Search Text
             const matchesSearch = item.title.toLowerCase().includes(query);
-            const matchesCategory = category === 'all' || item.category === category;
-            const matchesYear = year === 'all' || item.year.toString() === year;
 
-            return matchesSearch && matchesCategory && matchesYear;
+            // Categories (OR logic if multiple selected)
+            const matchesCategory = categories.length === 0 || categories.includes(item.category);
+
+            // Years (OR logic)
+            // item.year is number, values are strings. Convert to string for comparison.
+            const matchesYear = years.length === 0 || years.includes(item.year.toString());
+
+            // Directors (OR logic)
+            const matchesDirector = directors.length === 0 || directors.includes(item.director);
+
+            // Rating (OR logic? or Min? UI says "9+ Puan", "8+ Puan". It's checkboxes.)
+            // If I check "8+" and "9+", I expect item >= 8 OR item >= 9. Since >=9 implies >=8, checking 8+ covers 9+.
+            // But if they are distinct buckets... 
+            // My checkbox values are "9", "8", "7". 
+            // Logic: if any rating checkbox is checked, item.rating must be >= ANY of the selected values?
+            // Usually "8+" and "9+" selected means show me things that are 8+ OR 9+ (which is redundant).
+            // Let's assume standard behavior: if multiple checked, satisfy ANY condition.
+            // Example: Checked "8+" (val 8) and "7+" (val 7).
+            // Logic: (rating >= 8) OR (rating >= 7). This simplifies to rating >= 7.
+            // So we can take the MIN of selected values and filter >= MIN.
+            // BUT wait, if I check "Comedy" and "Action", I want Comedy OR Action.
+            // If I check "8+" and "7+", I probably just want 7+.
+            // Let's do: if ratings.length > 0, item.rating >= Math.min(ratings).
+
+            let matchesRating = true;
+            if (ratings.length > 0) {
+                const minSelectedRating = Math.min(...ratings);
+                matchesRating = item.rating >= minSelectedRating;
+            }
+
+            return matchesSearch && matchesCategory && matchesYear && matchesDirector && matchesRating;
         });
 
         renderGrid(filtered);
     };
 
-    searchInput.addEventListener('input', filterData);
-    categoryFilter.addEventListener('change', filterData);
-    yearFilter.addEventListener('change', filterData);
+    // Apply Button
+    applyFiltersBtn.addEventListener('click', () => {
+        filterData();
+        toggleFilterPanel(false);
+    });
+
+    // Clear Button
+    clearFiltersBtn.addEventListener('click', () => {
+        // Uncheck all
+        document.querySelectorAll('.filter-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
+        filterData(); // Reloads all
+        // toggleFilterPanel(false); // Maybe keep open to let them choose again? Let's keep open.
+    });
+
+    // Live search
+    searchInput.addEventListener('input', () => {
+        // When searching, do we respect panel filters? Yes, usually.
+        filterData();
+    });
 }
 
 function setupModal() {
@@ -139,6 +216,7 @@ function setupModal() {
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeModal();
+            toggleFilterPanel(false); // Also close panel if ESC pressed?
         }
     });
 }
