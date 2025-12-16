@@ -224,11 +224,61 @@ body.light-mode .theme-btn:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* Sub Header (Filters) */
+/* Sub Header (Filter & Sort) */
 .sub-header {
-    padding: 20px 0;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px 0;
+}
+
+.filter-toggle-btn {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.filter-toggle-btn:hover {
+    background-color: var(--accent-color);
+    color: #0f172a;
+    transform: translateY(-2px);
+}
+
+.sort-area {
+    display: flex;
+    align-items: center;
+}
+
+.sort-select {
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.sort-select:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--accent-color);
+    /* Add visual feedback directly on hover */
 }
 
 .filter-container {
@@ -525,37 +575,7 @@ footer {
     margin-top: auto;
 }
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-    .header-content {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .main-nav {
-        order: 2;
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 5px;
-        justify-content: center;
-    }
-
-    .header-actions {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .logo-area {
-        order: 1;
-    }
-
-    .search-bar input {
-        width: 100%;
-    }
-}
-
-/* Side Filter Panel Styles */
+/* Side Filter Panel Styles - Global */
 .filter-toggle-btn {
     background-color: var(--card-bg);
     color: var(--text-primary);
@@ -678,7 +698,6 @@ footer {
     display: flex;
     gap: 10px;
     background-color: var(--card-bg);
-    /* Ensure footer isn't transparent */
 }
 
 .btn-apply,
@@ -727,6 +746,39 @@ footer {
 .overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav {
+        order: 2;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        justify-content: center;
+    }
+
+    .header-actions {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-area {
+        order: 1;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+
+
 }
 
 @media (max-width: 480px) {

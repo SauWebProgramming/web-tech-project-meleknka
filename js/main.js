@@ -124,8 +124,11 @@ function setupSearchAndFilter() {
         // So this overlay is just for the side panel.
     });
 
-    // Filter Logic
-    const filterData = () => {
+    // Sorting Logic
+    const sortSelect = document.getElementById('sortSelect');
+
+    // Combine filtering and sorting
+    const processData = () => {
         const query = searchInput.value.toLowerCase();
 
         // Get checked values from panel
@@ -136,36 +139,23 @@ function setupSearchAndFilter() {
         const categories = getCheckedValues('category');
         const years = getCheckedValues('year');
         const directors = getCheckedValues('director');
-        const ratings = getCheckedValues('rating').map(Number); // e.g. [9, 8]
+        const ratings = getCheckedValues('rating').map(Number);
 
-        const filtered = currentData.filter(item => {
+        // 1. Filter
+        let processed = currentData.filter(item => {
             // Search Text
             const matchesSearch = item.title.toLowerCase().includes(query);
 
-            // Categories (OR logic if multiple selected)
+            // Categories
             const matchesCategory = categories.length === 0 || categories.includes(item.category);
 
-            // Years (OR logic)
-            // item.year is number, values are strings. Convert to string for comparison.
+            // Years
             const matchesYear = years.length === 0 || years.includes(item.year.toString());
 
-            // Directors (OR logic)
+            // Directors
             const matchesDirector = directors.length === 0 || directors.includes(item.director);
 
-            // Rating (OR logic? or Min? UI says "9+ Puan", "8+ Puan". It's checkboxes.)
-            // If I check "8+" and "9+", I expect item >= 8 OR item >= 9. Since >=9 implies >=8, checking 8+ covers 9+.
-            // But if they are distinct buckets... 
-            // My checkbox values are "9", "8", "7". 
-            // Logic: if any rating checkbox is checked, item.rating must be >= ANY of the selected values?
-            // Usually "8+" and "9+" selected means show me things that are 8+ OR 9+ (which is redundant).
-            // Let's assume standard behavior: if multiple checked, satisfy ANY condition.
-            // Example: Checked "8+" (val 8) and "7+" (val 7).
-            // Logic: (rating >= 8) OR (rating >= 7). This simplifies to rating >= 7.
-            // So we can take the MIN of selected values and filter >= MIN.
-            // BUT wait, if I check "Comedy" and "Action", I want Comedy OR Action.
-            // If I check "8+" and "7+", I probably just want 7+.
-            // Let's do: if ratings.length > 0, item.rating >= Math.min(ratings).
-
+            // Rating
             let matchesRating = true;
             if (ratings.length > 0) {
                 const minSelectedRating = Math.min(...ratings);
@@ -175,12 +165,26 @@ function setupSearchAndFilter() {
             return matchesSearch && matchesCategory && matchesYear && matchesDirector && matchesRating;
         });
 
-        renderGrid(filtered);
+        // 2. Sort
+        const sortValue = sortSelect.value;
+        if (sortValue !== 'default') {
+            processed.sort((a, b) => {
+                if (sortValue === 'year_desc') return b.year - a.year;
+                if (sortValue === 'year_asc') return a.year - b.year;
+                if (sortValue === 'rating_desc') return b.rating - a.rating;
+                if (sortValue === 'rating_asc') return a.rating - b.rating;
+                if (sortValue === 'az') return a.title.localeCompare(b.title, 'tr');
+                if (sortValue === 'za') return b.title.localeCompare(a.title, 'tr');
+                return 0;
+            });
+        }
+
+        renderGrid(processed);
     };
 
     // Apply Button
     applyFiltersBtn.addEventListener('click', () => {
-        filterData();
+        processData();
         toggleFilterPanel(false);
     });
 
@@ -188,14 +192,18 @@ function setupSearchAndFilter() {
     clearFiltersBtn.addEventListener('click', () => {
         // Uncheck all
         document.querySelectorAll('.filter-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
-        filterData(); // Reloads all
-        // toggleFilterPanel(false); // Maybe keep open to let them choose again? Let's keep open.
+        processData();
+        // toggleFilterPanel(false); 
     });
 
     // Live search
     searchInput.addEventListener('input', () => {
-        // When searching, do we respect panel filters? Yes, usually.
-        filterData();
+        processData();
+    });
+
+    // Sort Change
+    sortSelect.addEventListener('change', () => {
+        processData();
     });
 }
 
