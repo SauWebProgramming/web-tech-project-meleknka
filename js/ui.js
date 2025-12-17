@@ -33,7 +33,7 @@ export function renderGrid(data) {
                     <span>${item.category}</span>
                     <span style="text-transform: capitalize;">${typeDisplay}</span>
                 </div>
-                <button class="detail-btn">Detaylar</button>
+                <button class="detail-btn" aria-label="${item.title} detaylarını gör">Detaylar</button>
             </div>
         `;
 
@@ -86,6 +86,11 @@ function openModal(item) {
     });
 
     detailModal.classList.add('show');
+
+    // BONUS: A11y - Focus Management
+    // Set tabindex to make it focusable, then focus
+    detailModal.setAttribute('tabindex', '-1');
+    detailModal.focus();
 }
 
 function updateFavBtnState(btn, itemId) {

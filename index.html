@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BONUS: PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -33,10 +36,10 @@
                     <input type="text" id="searchInput" placeholder="Film, dizi veya kitap ara...">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </div>
-                <button id="themeToggle" class="theme-btn" title="Tema Değiştir">
+                <button id="themeToggle" class="theme-btn" title="Tema Değiştir" aria-label="Tema Değiştir">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <button class="fav-icon-btn" data-tab="favorites" title="Favorilerim">
+                <button class="fav-icon-btn" data-tab="favorites" title="Favorilerim" aria-label="Favorilerim">
                     <i class="fa-solid fa-heart"></i>
                 </button>
             </div>
@@ -70,7 +73,7 @@
     <aside id="filterPanel" class="filter-panel">
         <div class="filter-header">
             <h3>Filtreler</h3>
-            <button id="closeFilterBtn" class="close-filter-btn">&times;</button>
+            <button id="closeFilterBtn" class="close-filter-btn" aria-label="Filtre panelini kapat">&times;</button>
         </div>
         <div class="filter-body">
             <!-- Sections will be populated dynamically or static structure here -->
@@ -104,7 +107,7 @@
     <!-- Modal for Details -->
     <div id="detailModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
+            <span class="close-btn" role="button" tabindex="0" aria-label="Kapat">&times;</span>
             <div class="modal-body">
                 <div class="modal-image">
                     <img id="modalImg" src="" alt="Medya Görseli">
@@ -135,6 +138,17 @@
     </footer>
 
     <script type="module" src="js/main.js"></script>
+
+    <!-- BONUS: PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker Registered (PWA)', reg.scope))
+                    .catch(err => console.log('Service Worker Registration Failed', err));
+            });
+        }
+    </script>
 </body>
 
 </html>
