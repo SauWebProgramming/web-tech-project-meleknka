@@ -1,482 +1,354 @@
 [
-  {
-    "id": 1,
-    "title": "Inception",
-    "type": "movie",
-    "year": 2010,
-    "category": "Bilim Kurgu",
-    "director": "Christopher Nolan",
-    "cast": [
-      "Leonardo DiCaprio",
-      "Joseph Gordon-Levitt",
-      "Elliot Page"
-    ],
-    "summary": "Rüya paylaşım teknolojisini kullanarak kurumsal sırları çalan bir hırsıza, bir CEO'nun zihnine bir fikir yerleştirme görevi verilir.",
-    "rating": 8.8,
-    "image": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Kara Şövalye",
-    "type": "movie",
-    "year": 2008,
-    "category": "Aksiyon",
-    "director": "Christopher Nolan",
-    "cast": [
-      "Christian Bale",
-      "Heath Ledger",
-      "Aaron Eckhart"
-    ],
-    "summary": "Joker olarak bilinen tehdit Gotham halkına kaos getirdiğinde, Batman adaletsizlikle savaşma yeteneğinin en büyük psikolojik ve fiziksel testlerinden birini kabul etmelidir.",
-    "rating": 9.0,
-    "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Yıldızlararası",
-    "type": "movie",
-    "year": 2014,
-    "category": "Bilim Kurgu",
-    "director": "Christopher Nolan",
-    "cast": [
-      "Matthew McConaughey",
-      "Anne Hathaway",
-      "Jessica Chastain"
-    ],
-    "summary": "Bir grup kaşif, insanlığın hayatta kalmasını sağlamak için uzaydaki bir solucan deliğinden geçer.",
-    "rating": 8.6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Parazit",
-    "type": "movie",
-    "year": 2019,
-    "category": "Gerilim",
-    "director": "Bong Joon Ho",
-    "cast": [
-      "Kang-ho Song",
-      "Sun-kyun Lee",
-      "Yeo-jeong Cho"
-    ],
-    "summary": "Açgözlülük ve sınıf ayrımcılığı, zengin Park ailesi ile yoksul Kim klanı arasında yeni oluşan simbiyotik ilişkiyi tehdit eder.",
-    "rating": 8.6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29_poster.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Baba",
-    "type": "movie",
-    "year": 1972,
-    "category": "Suç",
-    "director": "Francis Ford Coppola",
-    "cast": [
-      "Marlon Brando",
-      "Al Pacino",
-      "James Caan"
-    ],
-    "summary": "Organize suç hanedanının yaşlanan patriği, gizli imparatorluğunun kontrolünü isteksiz oğluna devreder.",
-    "rating": 9.2,
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Memoir of a Snail",
-    "type": "movie",
-    "year": 2024,
-    "category": "Animasyon",
-    "director": "Adam Elliot",
-    "cast": [
-      "Sarah Snook",
-      "Kodi Smit-McPhee",
-      "Eric Bana"
-    ],
-    "summary": "Avustralya'da 1970'lerde geçen film, talihsizliklerle dolu hayatında teselliyi salyangoz toplamakta bulan Grace Pudel'in dokunaklı hikayesini anlatıyor.",
-    "rating": 8.1,
-    "image": "https://placehold.co/600x900?text=Memoir+of+a+Snail"
-  },
-  {
-    "id": 7,
-    "title": "Ruhların Kaçışı",
-    "type": "movie",
-    "year": 2001,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Rumi Hiiragi",
-      "Miyu Irino",
-      "Mari Natsuki"
-    ],
-    "summary": "Ailesiyle yeni bir mahalleye taşınan 10 yaşındaki Chihiro, tanrılar, cadılar ve ruhların dünyasına girer ve burada insanların canavara dönüştüğünü keşfeder.",
-    "rating": 8.6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png"
-  },
-  {
-    "id": 8,
-    "title": "Komşum Totoro",
-    "type": "movie",
-    "year": 1988,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Hitoshi Takagi",
-      "Noriko Hidaka",
-      "Chika Sakamoto"
-    ],
-    "summary": "İki kız kardeş, hasta annelerine daha yakın olmak için babalarıyla birlikte kırsal bir eve taşınır ve oradaki orman ruhlarıyla arkadaş olurlar.",
-    "rating": 8.1,
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg"
-  },
-  {
-    "id": 9,
-    "title": "Büyük Budapeşte Oteli",
-    "type": "movie",
-    "year": 2014,
-    "category": "Komedi",
-    "director": "Wes Anderson",
-    "cast": [
-      "Ralph Fiennes",
-      "F. Murray Abraham",
-      "Mathieu Amalric"
-    ],
-    "summary": "İki savaş arası dönemde ünlü bir Avrupa otelinde kapıcı olan Gustave H. ile onun en güvendiği arkadaşı olan lobi görevlisi Zero Moustafa'nın maceraları.",
-    "rating": 8.1,
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Grand_Budapest_Hotel_poster.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Yaman Tilki",
-    "type": "movie",
-    "year": 2009,
-    "category": "Animasyon",
-    "director": "Wes Anderson",
-    "cast": [
-      "George Clooney",
-      "Meryl Streep",
-      "Bill Murray"
-    ],
-    "summary": "Kurnaz bir tilki, ailesini beslemek için üç kötü çiftçiden yiyecek çalar, ancak çiftçiler onu öldürmeye karar verince yer altına inmek zorunda kalır.",
-    "rating": 7.9,
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/af/Fantastic_Mr._Fox.jpg"
-  },
-  {
-    "id": 11,
-    "title": "Aslan Kral",
-    "type": "movie",
-    "year": 1994,
-    "category": "Animasyon",
-    "director": "Roger Allers, Rob Minkoff",
-    "cast": [
-      "Matthew Broderick",
-      "Jeremy Irons",
-      "James Earl Jones"
-    ],
-    "summary": "Yavru aslan Simba, babasının yerine geçmek için amcası Scar'ın entrikalarıyla mücadele ederken krallığın gerçek anlamını öğrenir.",
-    "rating": 8.5,
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg"
-  },
-  {
-    "id": 12,
-    "title": "Ölü Gelin",
-    "type": "movie",
-    "year": 2005,
-    "category": "Animasyon",
-    "director": "Tim Burton, Mike Johnson",
-    "cast": [
-      "Johnny Depp",
-      "Helena Bonham Carter",
-      "Emily Watson"
-    ],
-    "summary": "Utangaç bir damat, düğün provasında yanlışlıkla ölü bir gelini diriltir ve kendini Ölüler Diyarı'nda bulur.",
-    "rating": 7.3,
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/Corpse_Bride_poster.jpg"
-  },
-  {
-    "id": 13,
-    "title": "Makas Eller",
-    "type": "movie",
-    "year": 1990,
-    "category": "Fantastik",
-    "director": "Tim Burton",
-    "cast": [
-      "Johnny Depp",
-      "Winona Ryder",
-      "Dianne Wiest"
-    ],
-    "summary": "Elleri yerine makasları olan yapay bir adam, banliyöde yaşayan bir aile tarafından evlat edinilir ve kasabada hem hayranlık hem de korku uyandırır.",
-    "rating": 7.9,
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Edwardscissorhandsposter.JPG"
-  },
-  {
-    "id": 14,
-    "title": "Kirazın Tadı",
-    "type": "movie",
-    "year": 1997,
-    "category": "Dram",
-    "director": "Abbas Kiarostami",
-    "cast": [
-      "Homayoun Ershadi",
-      "Abdolrahman Bagheri",
-      "Afshin Khorshid Bakhtiari"
-    ],
-    "summary": "İntihar etmeyi planlayan orta yaşlı bir adam, kendisini gömmeyi kabul edecek birini bulmak için Tahran'ın eteklerinde arabasıyla dolaşır.",
-    "rating": 7.7,
-    "image": "https://upload.wikimedia.org/wikipedia/en/f/f9/Taste_of_cherry.jpg"
-  },
-  {
-    "id": 15,
-    "title": "Yakın Plan",
-    "type": "movie",
-    "year": 1990,
-    "category": "Dram",
-    "director": "Abbas Kiarostami",
-    "cast": [
-      "Hossain Sabzian",
-      "Mohsen Makhmalbaf",
-      "Abolfazl Ahankhah"
-    ],
-    "summary": "Ünlü yönetmen Mohsen Makhmalbaf olduğunu iddia ederek bir aileyi kandıran bir sinefilin gerçek hikayesini anlatan yarı belgesel film.",
-    "rating": 8.2,
-    "image": "https://upload.wikimedia.org/wikipedia/en/6/63/Close-Up_%281990_film%29.jpg"
-  },
-  {
-    "id": 16,
-    "title": "Ucuz Roman",
-    "type": "movie",
-    "year": 1994,
-    "category": "Suç",
-    "director": "Quentin Tarantino",
-    "cast": [
-      "John Travolta",
-      "Uma Thurman",
-      "Samuel L. Jackson"
-    ],
-    "summary": "İki tetikçi, bir boksör, bir gangster ve karısının hayatları, şiddet ve kurtuluşun iç içe geçtiği dört hikayede kesişir.",
-    "rating": 8.9,
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
-  },
-  {
-    "id": 17,
-    "title": "Esaretin Bedeli",
-    "type": "movie",
-    "year": 1994,
-    "category": "Dram",
-    "director": "Frank Darabont",
-    "cast": [
-      "Tim Robbins",
-      "Morgan Freeman",
-      "Bob Gunton"
-    ],
-    "summary": "Haksız yere cinayetle suçlanan bir bankacı, hapishanede geçirdiği yıllar boyunca umudunu korur ve bir mahkumla dostluk kurar.",
-    "rating": 9.3,
-    "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
-  },
-  {
-    "id": 18,
-    "title": "Dövüş Kulübü",
-    "type": "movie",
-    "year": 1999,
-    "category": "Dram",
-    "director": "David Fincher",
-    "cast": [
-      "Brad Pitt",
-      "Edward Norton",
-      "Meat Loaf"
-    ],
-    "summary": "Uykusuzluk çeken bir ofis çalışanı ve karizmatik bir sabun üreticisi, yeraltı dövüş kulübü kurar ve bu kulüp çok daha büyük bir şeye dönüşür.",
-    "rating": 8.8,
-    "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg"
-  },
-  {
-    "id": 19,
-    "title": "Yüzüklerin Efendisi: Yüzük Kardeşliği",
-    "type": "movie",
-    "year": 2001,
-    "category": "Fantastik",
-    "director": "Peter Jackson",
-    "cast": [
-      "Elijah Wood",
-      "Ian McKellen",
-      "Orlando Bloom"
-    ],
-    "summary": "Uysal bir Hobbit ve sekiz arkadaşı, güçlü Tek Yüzüğü yok etmek ve Orta Dünya'yı Karanlık Lord Sauron'dan kurtarmak için bir yolculuğa çıkar.",
-    "rating": 8.8,
-    "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_poster.jpg"
-  },
-  {
-    "id": 20,
-    "title": "Matrix",
-    "type": "movie",
-    "year": 1999,
-    "category": "Bilim Kurgu",
-    "director": "Lana Wachowski, Lilly Wachowski",
-    "cast": [
-      "Keanu Reeves",
-      "Laurence Fishburne",
-      "Carrie-Anne Moss"
-    ],
-    "summary": "Bir bilgisayar korsanı, gizemli isyancılardan gerçeğin doğasını ve insanlığa karşı savaşını öğrenir.",
-    "rating": 8.7,
-    "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
-  },
-  {
-    "id": 21,
-    "title": "Kagliostro'nun Şatosu",
-    "type": "movie",
-    "year": 1979,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Yasuo Yamada",
-      "Eiko Masuyama",
-      "Kiyoshi Kobayashi"
-    ],
-    "summary": "Usta hırsız Lupin III, sahte para basan bir çetenin izini sürerek Cagliostro Dükalığı'na gider ve burada zorla evlendirilmek istenen bir prensesi kurtarmaya çalışır.",
-    "rating": 7.6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Lupin_III_The_Castle_of_Cagliostro_poster.jpg/220px-Lupin_III_The_Castle_of_Cagliostro_poster.jpg"
-  },
-  {
-    "id": 22,
-    "title": "Rüzgarlı Vadi",
-    "type": "movie",
-    "year": 1984,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Sumi Shimamoto",
-      "Mahito Tsujimura",
-      "Hisako Kyôda"
-    ],
-    "summary": "Kıyamet sonrası bir dünyada, Rüzgarlı Vadi'nin prensesi Nausicaä, dev böcekler ve zehirli bitkilerle dolu bir ormanın yayılmasını engellemeye ve insanlığı savaştan korumaya çalışır.",
-    "rating": 8.0,
-    "image": "https://upload.wikimedia.org/wikipedia/en/b/b5/Nausicaa_of_the_Valley_of_the_Wind_%28movie_poster%29.jpg"
-  },
-  {
-    "id": 23,
-    "title": "Gökteki Kale",
-    "type": "movie",
-    "year": 1986,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Mayumi Tanaka",
-      "Keiko Yokozawa",
-      "Kotoe Hatsui"
-    ],
-    "summary": "Genç bir madenci ve gizemli bir kız, efsanevi bir uçan kaleyi bulmak için korsanlar ve hükümet ajanlarıyla yarışır.",
-    "rating": 8.0,
-    "image": "https://upload.wikimedia.org/wikipedia/en/f/f5/Castle_in_the_Sky_%281986%29.png"
-  },
-  {
-    "id": 24,
-    "title": "Küçük Cadı Kiki",
-    "type": "movie",
-    "year": 1989,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Minami Takayama",
-      "Rei Sakuma",
-      "Kappei Yamaguchi"
-    ],
-    "summary": "Genç bir cadı olan Kiki, eğitimi için yeni bir şehre taşınır ve uçan süpürgesiyle bir kurye servisi başlatarak bağımsızlığını kazanmaya çalışır.",
-    "rating": 7.8,
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/07/Kiki%27s_Delivery_Service_%28Movie%29.jpg"
-  },
-  {
-    "id": 25,
-    "title": "Kırmızı Kanatlar",
-    "type": "movie",
-    "year": 1992,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Shûichirô Moriyama",
-      "Tokiko Katô",
-      "Bunshi Katsura Vi"
-    ],
-    "summary": "1930'ların İtalya'sında, bir lanet yüzünden domuza dönüşen bir pilot, hava korsanlarıyla savaşır.",
-    "rating": 7.7,
-    "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Porco_Rosso_%28Movie_Poster%29.jpg"
-  },
-  {
-    "id": 26,
-    "title": "Prenses Mononoke",
-    "type": "movie",
-    "year": 1997,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Yôji Matsuda",
-      "Yuriko Ishida",
-      "Yûko Tanaka"
-    ],
-    "summary": "Bir laneti kaldırmak için yolculuğa çıkan Prens Ashitaka, ormanı koruyan Prenses Mononoke ile doğayı yok etmeye çalışan insanlar arasındaki savaşın ortasında kalır.",
-    "rating": 8.4,
-    "image": "https://upload.wikimedia.org/wikipedia/en/8/8c/Princess_Mononoke_Japanese_poster.png"
-  },
-  {
-    "id": 27,
-    "title": "Yürüyen Şato",
-    "type": "movie",
-    "year": 2004,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Chieko Baishô",
-      "Takuya Kimura",
-      "Akihiro Miwa"
-    ],
-    "summary": "Kötü bir cadı tarafından yaşlı bir kadına dönüştürülen Sophie, büyücü Howl'un yürüyen şatosuna sığınır ve laneti bozmanın yollarını arar.",
-    "rating": 8.2,
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a0/Howls-moving-castleposter.jpg"
-  },
-  {
-    "id": 28,
-    "title": "Küçük Deniz Kızı Ponyo",
-    "type": "movie",
-    "year": 2008,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Yuria Nara",
-      "Hiroki Doi",
-      "Tomoko Yamaguchi"
-    ],
-    "summary": "İnsan olmak isteyen bir japon balığı prensesi olan Ponyo, 5 yaşındaki Sosuke ile arkadaş olur ve bu durum dünyanın dengesini bozar.",
-    "rating": 7.6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Ponyo_%282008_film%29.jpg"
-  },
-  {
-    "id": 29,
-    "title": "Rüzgar Yükseliyor",
-    "type": "movie",
-    "year": 2013,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Hideaki Anno",
-      "Hidetoshi Nishijima",
-      "Miori Takimoto"
-    ],
-    "summary": "Uçaklara tutkulu olan Jiro Horikoshi'nin, İkinci Dünya Savaşı sırasında kullanılan Mitsubishi A6M Zero savaş uçağını tasarlama sürecini anlatan biyografik bir hikaye.",
-    "rating": 7.7,
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/The_Wind_Rises_poster.jpg"
-  },
-  {
-    "id": 30,
-    "title": "Çocuk ve Balıkçıl",
-    "type": "movie",
-    "year": 2023,
-    "category": "Animasyon",
-    "director": "Hayao Miyazaki",
-    "cast": [
-      "Soma Santoki",
-      "Masaki Suda",
-      "Ko Shibasaki"
-    ],
-    "summary": "Annesini kaybeden Mahito, gizemli bir balıkçıl kuşunun rehberliğinde fantastik bir dünyaya adım atar.",
-    "rating": 7.6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/4/4c/The_Boy_and_the_Heron_poster.jpg"
-  }
+    {
+        "id": 1,
+        "title": "Inception",
+        "type": "movie",
+        "year": 2010,
+        "category": "Bilim Kurgu",
+        "director": "Christopher Nolan",
+        "cast": [
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Elliot Page"
+        ],
+        "summary": "Rüya paylaşım teknolojisini kullanarak kurumsal sırları çalan bir hırsıza, bir CEO'nun zihnine bir fikir yerleştirme görevi verilir.",
+        "rating": 8.8,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Yıldızlararası",
+        "type": "movie",
+        "year": 2014,
+        "category": "Bilim Kurgu",
+        "director": "Christopher Nolan",
+        "cast": [
+            "Matthew McConaughey",
+            "Anne Hathaway",
+            "Jessica Chastain"
+        ],
+        "summary": "Bir grup kaşif, insanlığın hayatta kalmasını sağlamak için uzaydaki bir solucan deliğinden geçer.",
+        "rating": 8.6,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCUYVSeablMI.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Baba",
+        "type": "movie",
+        "year": 1972,
+        "category": "Suç",
+        "director": "Francis Ford Coppola",
+        "cast": [
+            "Marlon Brando",
+            "Al Pacino",
+            "James Caan"
+        ],
+        "summary": "Organize suç hanedanının yaşlanan patriği, gizli imparatorluğunun kontrolünü isteksiz oğluna devreder.",
+        "rating": 9.2,
+        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enUSQD19bFKmwDg.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Memoir of a Snail",
+        "type": "movie",
+        "year": 2024,
+        "category": "Animasyon",
+        "director": "Adam Elliot",
+        "cast": [
+            "Sarah Snook",
+            "Kodi Smit-McPhee",
+            "Eric Bana"
+        ],
+        "summary": "Avustralya'da 1970'lerde geçen film, talihsizliklerle dolu hayatında teselliyi salyangoz toplamakta bulan Grace Pudel'in dokunaklı hikayesini anlatıyor.",
+        "rating": 8.1,
+        "image": "img/memoir_of_a_snail.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Ruhların Kaçışı",
+        "type": "movie",
+        "year": 2001,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Rumi Hiiragi",
+            "Miyu Irino",
+            "Mari Natsuki"
+        ],
+        "summary": "Ailesiyle yeni bir mahalleye taşınan 10 yaşındaki Chihiro, tanrılar, cadılar ve ruhların dünyasına girer ve burada insanların canavara dönüştüğünü keşfeder.",
+        "rating": 8.6,
+        "image": "img/ruhlar_n_ka____.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Komşum Totoro",
+        "type": "movie",
+        "year": 1988,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Hitoshi Takagi",
+            "Noriko Hidaka",
+            "Chika Sakamoto"
+        ],
+        "summary": "İki kız kardeş, hasta annelerine daha yakın olmak için babalarıyla birlikte kırsal bir eve taşınır ve oradaki orman ruhlarıyla arkadaş olurlar.",
+        "rating": 8.1,
+        "image": "img/kom_um_totoro.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Büyük Budapeşte Oteli",
+        "type": "movie",
+        "year": 2014,
+        "category": "Komedi",
+        "director": "Wes Anderson",
+        "cast": [
+            "Ralph Fiennes",
+            "F. Murray Abraham",
+            "Mathieu Amalric"
+        ],
+        "summary": "İki savaş arası dönemde ünlü bir Avrupa otelinde kapıcı olan Gustave H. ile onun en güvendiği arkadaşı olan lobi görevlisi Zero Moustafa'nın maceraları.",
+        "rating": 8.1,
+        "image": "https://placehold.co/600x900?text=B%C3%BCy%C3%BCk%20Budape%C5%9Fte%20Oteli"
+    },
+    {
+        "id": 10,
+        "title": "Yaman Tilki",
+        "type": "movie",
+        "year": 2009,
+        "category": "Animasyon",
+        "director": "Wes Anderson",
+        "cast": [
+            "George Clooney",
+            "Meryl Streep",
+            "Bill Murray"
+        ],
+        "summary": "Kurnaz bir tilki, ailesini beslemek için üç kötü çiftçiden yiyecek çalar, ancak çiftçiler onu öldürmeye karar verince yer altına inmek zorunda kalır.",
+        "rating": 7.9,
+        "image": "https://placehold.co/600x900?text=Yaman%20Tilki"
+    },
+    {
+        "id": 12,
+        "title": "Ölü Gelin",
+        "type": "movie",
+        "year": 2005,
+        "category": "Animasyon",
+        "director": "Tim Burton, Mike Johnson",
+        "cast": [
+            "Johnny Depp",
+            "Helena Bonham Carter",
+            "Emily Watson"
+        ],
+        "summary": "Utangaç bir damat, düğün provasında yanlışlıkla ölü bir gelini diriltir ve kendini Ölüler Diyarı'nda bulur.",
+        "rating": 7.3,
+        "image": "img/_l__gelin.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Kirazın Tadı",
+        "type": "movie",
+        "year": 1997,
+        "category": "Dram",
+        "director": "Abbas Kiarostami",
+        "cast": [
+            "Homayoun Ershadi",
+            "Abdolrahman Bagheri",
+            "Afshin Khorshid Bakhtiari"
+        ],
+        "summary": "İntihar etmeyi planlayan orta yaşlı bir adam, kendisini gömmeyi kabul edecek birini bulmak için Tahran'ın eteklerinde arabasıyla dolaşır.",
+        "rating": 7.7,
+        "image": "https://placehold.co/600x900?text=Kiraz%C4%B1n%20Tad%C4%B1"
+    },
+    {
+        "id": 18,
+        "title": "Dövüş Kulübü",
+        "type": "movie",
+        "year": 1999,
+        "category": "Dram",
+        "director": "David Fincher",
+        "cast": [
+            "Brad Pitt",
+            "Edward Norton",
+            "Meat Loaf"
+        ],
+        "summary": "Uykusuzluk çeken bir ofis çalışanı ve karizmatik bir sabun üreticisi, yeraltı dövüş kulübü kurar ve bu kulüp çok daha büyük bir şeye dönüşür.",
+        "rating": 8.8,
+        "image": "img/d_v___kul_b_.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Yüzüklerin Efendisi: Yüzük Kardeşliği",
+        "type": "movie",
+        "year": 2001,
+        "category": "Fantastik",
+        "director": "Peter Jackson",
+        "cast": [
+            "Elijah Wood",
+            "Ian McKellen",
+            "Orlando Bloom"
+        ],
+        "summary": "Uysal bir Hobbit ve sekiz arkadaşı, güçlü Tek Yüzüğü yok etmek ve Orta Dünya'yı Karanlık Lord Sauron'dan kurtarmak için bir yolculuğa çıkar.",
+        "rating": 8.8,
+        "image": "img/y_z_klerin_efendisi__y_z_k_karde_li_i.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Matrix",
+        "type": "movie",
+        "year": 1999,
+        "category": "Bilim Kurgu",
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "cast": [
+            "Keanu Reeves",
+            "Laurence Fishburne",
+            "Carrie-Anne Moss"
+        ],
+        "summary": "Bir bilgisayar korsanı, gizemli isyancılardan gerçeğin doğasını ve insanlığa karşı savaşını öğrenir.",
+        "rating": 8.7,
+        "image": "img/matrix.jpg"
+    },
+    {
+        "id": 22,
+        "title": "Rüzgarlı Vadi",
+        "type": "movie",
+        "year": 1984,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Sumi Shimamoto",
+            "Mahito Tsujimura",
+            "Hisako Kyôda"
+        ],
+        "summary": "Kıyamet sonrası bir dünyada, Rüzgarlı Vadi'nin prensesi Nausicaä, dev böcekler ve zehirli bitkilerle dolu bir ormanın yayılmasını engellemeye ve insanlığı savaştan korumaya çalışır.",
+        "rating": 8,
+        "image": "https://placehold.co/600x900?text=R%C3%BCzgarl%C4%B1%20Vadi"
+    },
+    {
+        "id": 23,
+        "title": "Gökteki Kale",
+        "type": "movie",
+        "year": 1986,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Mayumi Tanaka",
+            "Keiko Yokozawa",
+            "Kotoe Hatsui"
+        ],
+        "summary": "Genç bir madenci ve gizemli bir kız, efsanevi bir uçan kaleyi bulmak için korsanlar ve hükümet ajanlarıyla yarışır.",
+        "rating": 8,
+        "image": "https://placehold.co/600x900?text=G%C3%B6kteki%20Kale"
+    },
+    {
+        "id": 24,
+        "title": "Küçük Cadı Kiki",
+        "type": "movie",
+        "year": 1989,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Minami Takayama",
+            "Rei Sakuma",
+            "Kappei Yamaguchi"
+        ],
+        "summary": "Genç bir cadı olan Kiki, eğitimi için yeni bir şehre taşınır ve uçan süpürgesiyle bir kurye servisi başlatarak bağımsızlığını kazanmaya çalışır.",
+        "rating": 7.8,
+        "image": "https://placehold.co/600x900?text=K%C3%BC%C3%A7%C3%BCk%20Cad%C4%B1%20Kiki"
+    },
+    {
+        "id": 25,
+        "title": "Kırmızı Kanatlar",
+        "type": "movie",
+        "year": 1992,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Shûichirô Moriyama",
+            "Tokiko Katô",
+            "Bunshi Katsura Vi"
+        ],
+        "summary": "1930'ların İtalya'sında, bir lanet yüzünden domuza dönüşen bir pilot, hava korsanlarıyla savaşır.",
+        "rating": 7.7,
+        "image": "img/k_rm_z__kanatlar.jpg"
+    },
+    {
+        "id": 26,
+        "title": "Prenses Mononoke",
+        "type": "movie",
+        "year": 1997,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Yôji Matsuda",
+            "Yuriko Ishida",
+            "Yûko Tanaka"
+        ],
+        "summary": "Bir laneti kaldırmak için yolculuğa çıkan Prens Ashitaka, ormanı koruyan Prenses Mononoke ile doğayı yok etmeye çalışan insanlar arasındaki savaşın ortasında kalır.",
+        "rating": 8.4,
+        "image": "img/prenses_mononoke.jpg"
+    },
+    {
+        "id": 27,
+        "title": "Yürüyen Şato",
+        "type": "movie",
+        "year": 2004,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Chieko Baishô",
+            "Takuya Kimura",
+            "Akihiro Miwa"
+        ],
+        "summary": "Kötü bir cadı tarafından yaşlı bir kadına dönüştürülen Sophie, büyücü Howl'un yürüyen şatosuna sığınır ve laneti bozmanın yollarını arar.",
+        "rating": 8.2,
+        "image": "img/y_r_yen__ato.jpg"
+    },
+    {
+        "id": 28,
+        "title": "Küçük Deniz Kızı Ponyo",
+        "type": "movie",
+        "year": 2008,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Yuria Nara",
+            "Hiroki Doi",
+            "Tomoko Yamaguchi"
+        ],
+        "summary": "İnsan olmak isteyen bir japon balığı prensesi olan Ponyo, 5 yaşındaki Sosuke ile arkadaş olur ve bu durum dünyanın dengesini bozar.",
+        "rating": 7.6,
+        "image": "img/k___k_deniz_k_z__ponyo.jpg"
+    },
+    {
+        "id": 29,
+        "title": "Rüzgar Yükseliyor",
+        "type": "movie",
+        "year": 2013,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Hideaki Anno",
+            "Hidetoshi Nishijima",
+            "Miori Takimoto"
+        ],
+        "summary": "Uçaklara tutkulu olan Jiro Horikoshi'nin, İkinci Dünya Savaşı sırasında kullanılan Mitsubishi A6M Zero savaş uçağını tasarlama sürecini anlatan biyografik bir hikaye.",
+        "rating": 7.7,
+        "image": "img/r_zgar_y_kseliyor.jpg"
+    },
+    {
+        "id": 30,
+        "title": "Çocuk ve Balıkçıl",
+        "type": "movie",
+        "year": 2023,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Soma Santoki",
+            "Masaki Suda",
+            "Ko Shibasaki"
+        ],
+        "summary": "Annesini kaybeden Mahito, gizemli bir balıkçıl kuşunun rehberliğinde fantastik bir dünyaya adım atar.",
+        "rating": 7.6,
+        "image": "https://placehold.co/600x900?text=%C3%87ocuk%20ve%20Bal%C4%B1k%C3%A7%C4%B1l"
+    }
 ]

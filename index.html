@@ -131,6 +131,40 @@
         </div>
     </div>
 
+    <!-- Suggestion Widget -->
+    <div id="suggestionWidget" class="suggestion-widget">
+        <button id="suggestionBtn" class="suggestion-btn" title="Bana Öner" aria-label="Öneri Al">
+            <i class="fa-solid fa-comments"></i>
+        </button>
+
+        <div id="suggestionModal" class="suggestion-modal">
+            <div class="suggestion-header">
+                <h3>Ne İstersin?</h3>
+                <button id="closeSuggestionBtn" class="close-suggestion-btn">&times;</button>
+            </div>
+            <div class="suggestion-body">
+                <div id="suggestionChat" class="suggestion-chat">
+                    <div class="chat-message bot">
+                        <p>Merhaba! Ne izlemek veya okumak istersin? Aşağıdaki seçeneklerden birini seçebilir veya
+                            yazabilirsin.</p>
+                    </div>
+                </div>
+                <div id="quickActions" class="quick-actions">
+                    <button class="action-chip" data-text="Bana bir film öner">🎬 Film Öner</button>
+                    <button class="action-chip" data-text="Bana bir dizi öner">📺 Dizi Öner</button>
+                    <button class="action-chip" data-text="Bana bir kitap öner">📚 Kitap Öner</button>
+                    <button class="action-chip" data-text="Rastgele bir şey öner">🎲 Rastgele</button>
+                </div>
+            </div>
+            <div class="suggestion-footer">
+                <input type="text" id="suggestionInput" placeholder="Buraya yaz..." autocomplete="off">
+                <button id="sendSuggestionBtn" class="send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div id="overlay" class="overlay"></div>
 
     <footer>

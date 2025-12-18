@@ -1,5 +1,6 @@
 import { fetchData, getFavorites } from './data.js';
-import { renderGrid, closeModal, populateFilterPanel, toggleFilterPanel } from './ui.js';
+import { renderGrid, closeModal, populateFilterPanel, toggleFilterPanel, openModal } from './ui.js';
+import { initSuggestionWidget } from './suggestion.js';
 
 let currentData = [];
 let currentTab = 'all';
@@ -21,12 +22,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Initial Load
     await loadData('all');
 
+    // Initialize Suggestion Widget
     // Event Listeners
     setupNavigation();
     setupThemeToggle();
 
     setupSearchAndFilter();
     setupModal();
+
+    // Initialize Suggestion Widget (Non-blocking)
+    try {
+        const allGlobalData = await fetchData('all');
+        initSuggestionWidget(allGlobalData);
+    } catch (err) {
+        console.error("Suggestion widget failed to init:", err);
+    }
 
     // Listen for favorite updates to refresh grid if in favorites tab
     document.addEventListener('favoritesUpdated', () => {

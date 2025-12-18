@@ -47,7 +47,7 @@ export function renderGrid(data) {
     });
 }
 
-function openModal(item) {
+export function openModal(item) {
     document.getElementById('modalImg').src = item.image;
     document.getElementById('modalTitle').innerText = item.title;
     document.getElementById('modalYear').innerText = item.year;
