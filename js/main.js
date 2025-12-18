@@ -23,20 +23,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadData('all');
 
     // Initialize Suggestion Widget
+    const allGlobalData = await fetchData('all');
+    initSuggestionWidget(allGlobalData);
+
+    // Listen for custom event from suggestion widget to open modal
+    window.addEventListener('openDetailModal', (e) => {
+        openModal(e.detail);
+    });
+
     // Event Listeners
     setupNavigation();
     setupThemeToggle();
 
     setupSearchAndFilter();
     setupModal();
-
-    // Initialize Suggestion Widget (Non-blocking)
-    try {
-        const allGlobalData = await fetchData('all');
-        initSuggestionWidget(allGlobalData);
-    } catch (err) {
-        console.error("Suggestion widget failed to init:", err);
-    }
 
     // Listen for favorite updates to refresh grid if in favorites tab
     document.addEventListener('favoritesUpdated', () => {

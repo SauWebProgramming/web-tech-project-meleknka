@@ -526,7 +526,7 @@ select:focus {
 .summary {
     margin-bottom: 25px;
     line-height: 1.8;
-    color: #cbd5e1;
+    color: var(--text-secondary);
     font-size: 1.05rem;
 }
 

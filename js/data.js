@@ -6,9 +6,9 @@ export async function fetchData(type) {
         if (type === 'all') {
             try {
                 const responses = await Promise.all([
-                    fetch('./data/movies.json'),
-                    fetch('./data/series.json'),
-                    fetch('./data/books.json')
+                    fetch('./data/movies.json?t=' + new Date().getTime()),
+                    fetch('./data/series.json?t=' + new Date().getTime()),
+                    fetch('./data/books.json?t=' + new Date().getTime())
                 ]);
 
                 // Check for 404s
@@ -31,7 +31,7 @@ export async function fetchData(type) {
         } else {
             const filename = type === 'series' ? 'series.json' : `${type}s.json`;
             console.log(`Fetching ./data/${filename}...`);
-            const response = await fetch(`./data/${filename}`);
+            const response = await fetch(`./data/${filename}?t=` + new Date().getTime());
             if (!response.ok) {
                 throw new Error(`Failed to fetch ${type} from ./data/${filename} (${response.status})`);
             }

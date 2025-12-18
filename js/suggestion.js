@@ -7,12 +7,6 @@ export function initSuggestionWidget(allData) {
     const sendBtn = document.getElementById('sendSuggestionBtn');
     const chat = document.getElementById('suggestionChat');
 
-    // Safety Check
-    if (!widget || !btn || !modal || !closeBtn || !input || !sendBtn) {
-        console.warn("Suggestion widget DOM elements missing.");
-        return;
-    }
-
     // Toggle Modal
     btn.addEventListener('click', () => {
         modal.classList.toggle('active');

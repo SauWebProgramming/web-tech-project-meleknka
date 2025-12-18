@@ -61,8 +61,23 @@ export function openModal(item) {
 
     document.getElementById('modalRating').innerText = item.rating;
     document.getElementById('modalSummary').innerText = item.summary;
-    document.getElementById('modalDirector').innerText = item.director;
-    document.getElementById('modalCast').innerText = item.cast.join(', ');
+    // Handle Director/Author Label and Value
+    const directorLabel = document.getElementById('modalDirector').previousElementSibling;
+    const castContainer = document.getElementById('modalCast').parentElement;
+
+    if (item.type === 'book') {
+        if (directorLabel) directorLabel.innerText = 'Yazar:';
+        document.getElementById('modalDirector').innerText = item.author || '';
+        if (castContainer) castContainer.style.display = 'none';
+    } else {
+        if (directorLabel) directorLabel.innerText = 'Yönetmen:';
+        document.getElementById('modalDirector').innerText = item.director || '';
+
+        if (castContainer) {
+            castContainer.style.display = 'block';
+            document.getElementById('modalCast').innerText = item.cast ? item.cast.join(', ') : '-';
+        }
+    }
 
     const favBtn = document.getElementById('modalFavBtn');
     updateFavBtnState(favBtn, item.id);
