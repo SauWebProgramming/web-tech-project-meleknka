@@ -5,12 +5,12 @@ import { initSuggestionWidget } from './suggestion.js';
 let currentData = [];
 let currentTab = 'all';
 
-// Theme Logic
+// Tema ayarları (Koyu/Açık mod)
 const themeToggleBtn = document.getElementById('themeToggle');
 const body = document.body;
 const icon = themeToggleBtn.querySelector('i');
 
-// Check Local Storage
+// Daha önce seçilen temayı hatırla (LocalStorage'dan)
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     body.classList.add('light-mode');
@@ -18,89 +18,92 @@ if (savedTheme === 'light') {
     icon.classList.add('fa-sun');
 }
 
+// Sayfa tamamen yüklendiğinde çalışacak kodlar
 document.addEventListener('DOMContentLoaded', async () => {
-    // Initial Load
+    // İlk açılışta tüm verileri getir
     await loadData('all');
 
-    // Initialize Suggestion Widget
+    // Öneri Widget'ını başlat
     const allGlobalData = await fetchData('all');
     initSuggestionWidget(allGlobalData);
 
-    // Listen for custom event from suggestion widget to open modal
+    // Widget'tan gelen "Detay Aç" isteğini dinle
     window.addEventListener('openDetailModal', (e) => {
         openModal(e.detail);
     });
 
-    // Event Listeners
+    // Buton tıklamalarını ve tema değişimini ayarla
     setupNavigation();
     setupThemeToggle();
 
+    // Arama ve filtreleme özelliklerini ayarla
     setupSearchAndFilter();
     setupModal();
 
-    // Listen for favorite updates to refresh grid if in favorites tab
+    // Favoriler güncellendiğinde ekranı yenile (eğer favoriler sekmesindeysek)
     document.addEventListener('favoritesUpdated', () => {
         if (currentTab === 'favorites') {
             loadData('favorites');
         }
     });
-
-    // Close panel on resize if screen becomes large (optional, but good for UX)
-    // Actually our panel is useful on all screens, so no need to auto-close.
 });
 
+// Verileri yükleyip ekrana basan fonksiyon
 async function loadData(type) {
     currentTab = type;
 
     if (type === 'favorites') {
+        // Eğer favoriler seçildiyse hafızadan oku
         currentData = getFavorites();
     } else {
+        // Yoksa dosyadan yeni veri çek
         currentData = await fetchData(type);
     }
 
-    // Reset search
+    // Arama kutusunu temizle
     document.getElementById('searchInput').value = '';
 
-    // Populate Side Panel
+    // Yan paneldeki filtre seçeneklerini doldur
     populateFilterPanel(currentData);
 
-    // Initial Render
+    // Kartları ekrana çiz
     renderGrid(currentData);
 }
 
+// Menü butonlarını (Tümü, Film, Dizi, Kitap) ayarlayan fonksiyon
 function setupNavigation() {
-    // Main Nav Buttons (All, Movies, Series, Books)
     const navBtns = document.querySelectorAll('.nav-btn');
     navBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
+            // Önce hepsinden aktif sınıfını kaldır
             navBtns.forEach(b => b.classList.remove('active'));
+            // Tıklanana ekle
             e.target.classList.add('active');
 
-            // Remove active state from heart icon if it was active
+            // Kalp ikonunun aktifliğini kaldır
             document.querySelector('.fav-icon-btn').classList.remove('active');
 
+            // Hangi butona tıklandıysa o veriyi yükle (data-tab özelliği)
             const tab = e.target.dataset.tab;
             loadData(tab);
         });
     });
 
-    // Favorites Icon Button
+    // Kalp butonuna (Favorilerim) tıklanınca
     const favBtn = document.querySelector('.fav-icon-btn');
     favBtn.addEventListener('click', () => {
-        // Remove active from text nav buttons
         navBtns.forEach(b => b.classList.remove('active'));
-
-        // Add active to heart icon
         favBtn.classList.add('active');
-
         loadData('favorites');
     });
 }
 
+// Tema değiştirme butonunu ayarlayan fonksiyon
 function setupThemeToggle() {
     themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
+        body.classList.toggle('light-mode'); // Sınıfı ekle veya çikar
 
+        // Yeni durumu hafızaya kaydet
         if (body.classList.contains('light-mode')) {
             localStorage.setItem('theme', 'light');
             icon.classList.remove('fa-moon');
@@ -113,6 +116,7 @@ function setupThemeToggle() {
     });
 }
 
+// Arama, filtreleme ve sıralama işlemlerini ayarlayan fonksiyon
 function setupSearchAndFilter() {
     const searchInput = document.getElementById('searchInput');
     const filterToggleBtn = document.getElementById('filterToggleBtn');
@@ -121,27 +125,21 @@ function setupSearchAndFilter() {
     const applyFiltersBtn = document.getElementById('applyFiltersBtn');
     const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
-    // Toggle Panel
+    // Paneli aç/kapat olayları
     filterToggleBtn.addEventListener('click', () => toggleFilterPanel(true));
     closeFilterBtn.addEventListener('click', () => toggleFilterPanel(false));
     overlay.addEventListener('click', () => {
         toggleFilterPanel(false);
-        // Also close modal if open? Overlay is shared? 
-        // Current HTML puts overlay separately. 
-        // Modal has its own backdrop logic usually, but let's check style. 
-        // css line 356: .modal { ... background-color: rgba(0,0,0,0.85) } 
-        // Modal covers everything including overlay.
-        // So this overlay is just for the side panel.
     });
 
-    // Sorting Logic
+    // Sıralama kutusu
     const sortSelect = document.getElementById('sortSelect');
 
-    // Combine filtering and sorting
+    // Verileri hem filtreleyen hem sıralayan ana fonksiyon
     const processData = () => {
-        const query = searchInput.value.toLowerCase();
+        const query = searchInput.value.toLowerCase(); // Arama metnini küçük harfe çevir
 
-        // Get checked values from panel
+        // Seçili kutucukları (checkbox) bulup değerlerini alan yardımcı fonksiyon
         const getCheckedValues = (name) => {
             return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(cb => cb.value);
         };
@@ -149,92 +147,93 @@ function setupSearchAndFilter() {
         const categories = getCheckedValues('category');
         const years = getCheckedValues('year');
         const directors = getCheckedValues('director');
-        const ratings = getCheckedValues('rating').map(Number);
+        const ratings = getCheckedValues('rating').map(Number); // Puanları sayıya çevir
 
-        // 1. Filter
+        // 1. ADIM: FİLTRELEME
         let processed = currentData.filter(item => {
-            // Search Text
+            // Arama metni
             const matchesSearch = item.title.toLowerCase().includes(query);
 
-            // Categories
+            // Kategori (hiç seçilmediyse hepsi gelsin)
             const matchesCategory = categories.length === 0 || categories.includes(item.category);
 
-            // Years
+            // Yıl
             const matchesYear = years.length === 0 || years.includes(item.year.toString());
 
-            // Directors
+            // Yönetmen/Yazar
             const matchesDirector = directors.length === 0 || directors.includes(item.director);
 
-            // Rating
+            // Puan (Örn: 8+ seçildiyse 8 ve üzeri olanları getir)
             let matchesRating = true;
             if (ratings.length > 0) {
                 const minSelectedRating = Math.min(...ratings);
                 matchesRating = item.rating >= minSelectedRating;
             }
 
+            // Hepsi uyuyorsa true döner ve listeye eklenir
             return matchesSearch && matchesCategory && matchesYear && matchesDirector && matchesRating;
         });
 
-        // 2. Sort
+        // 2. ADIM: SIRALAMA
         const sortValue = sortSelect.value;
         if (sortValue !== 'default') {
             processed.sort((a, b) => {
-                if (sortValue === 'year_desc') return b.year - a.year;
-                if (sortValue === 'year_asc') return a.year - b.year;
-                if (sortValue === 'rating_desc') return b.rating - a.rating;
-                if (sortValue === 'rating_asc') return a.rating - b.rating;
-                if (sortValue === 'az') return a.title.localeCompare(b.title, 'tr');
-                if (sortValue === 'za') return b.title.localeCompare(a.title, 'tr');
+                if (sortValue === 'year_desc') return b.year - a.year; // Yıl: Yeni -> Eski
+                if (sortValue === 'year_asc') return a.year - b.year; // Yıl: Eski -> Yeni
+                if (sortValue === 'rating_desc') return b.rating - a.rating; // Puan: Yüksek -> Düşük
+                if (sortValue === 'rating_asc') return a.rating - b.rating; // Puan: Düşük -> Yüksek
+                if (sortValue === 'az') return a.title.localeCompare(b.title, 'tr'); // A -> Z
+                if (sortValue === 'za') return b.title.localeCompare(a.title, 'tr'); // Z -> A
                 return 0;
             });
         }
 
-        renderGrid(processed);
+        renderGrid(processed); // Sonuçları ekrana bas
     };
 
-    // Apply Button
+    // Uygula butonuna basılınca
     applyFiltersBtn.addEventListener('click', () => {
         processData();
-        toggleFilterPanel(false);
+        toggleFilterPanel(false); // Paneli kapat
     });
 
-    // Clear Button
+    // Temizle butonuna basılınca
     clearFiltersBtn.addEventListener('click', () => {
-        // Uncheck all
+        // Tüm kutucukların işaretini kaldır
         document.querySelectorAll('.filter-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
         processData();
-        // toggleFilterPanel(false); 
     });
 
-    // Live search
+    // Arama kutusuna her harf yazıldığında canlı filtrele
     searchInput.addEventListener('input', () => {
         processData();
     });
 
-    // Sort Change
+    // Sıralama değiştiğinde
     sortSelect.addEventListener('change', () => {
         processData();
     });
 }
 
+// Detay penceresi (Modal) kapatma işlemlerini ayarlayan fonksiyon
 function setupModal() {
     const closeBtn = document.querySelector('.close-btn');
     const modal = document.getElementById('detailModal');
 
     closeBtn.addEventListener('click', closeModal);
 
-    // Close on click outside
+    // Pencere dışına tıklanırsa kapat
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             closeModal();
         }
     });
 
-    // Close on Escape key
+    // ESC tuşuna basılırsa kapat
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeModal();
-            toggleFilterPanel(false); // Also close panel if ESC pressed?
+            toggleFilterPanel(false); // Paneli de kapat
         }
     });
 }
