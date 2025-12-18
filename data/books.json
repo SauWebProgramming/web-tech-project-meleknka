@@ -1,258 +1,178 @@
 [
     {
         "id": 201,
-        "title": "Dune",
-        "type": "book",
-        "year": 1965,
-        "category": "Bilim Kurgu",
-        "director": "Frank Herbert",
-        "cast": [
-            "Paul Atreides",
-            "Lady Jessica",
-            "Baron Harkonnen"
-        ],
-        "summary": "Paul Atreides'in, evrenin en değerli maddesi olan 'baharat'ın tek kaynağı olan çöl gezegeni Arrakis'teki destansı yolculuğu.",
-        "rating": 9.2,
-        "image": "https://placehold.co/600x900?text=Dune"
-    },
-    {
-        "id": 202,
-        "title": "1984",
-        "type": "book",
-        "year": 1949,
-        "category": "Distopya",
-        "director": "George Orwell",
-        "cast": [
-            "Winston Smith",
-            "Büyük Birader",
-            "Julia"
-        ],
-        "summary": "Totaliter bir rejim altında, gerçeğin manipüle edildiği ve bireyselliğin yok edildiği karanlık bir geleceğin tasviri.",
-        "rating": 9,
-        "image": "https://placehold.co/600x900?text=1984"
-    },
-    {
-        "id": 203,
-        "title": "Hobbit",
-        "type": "book",
-        "year": 1937,
-        "category": "Fantastik",
-        "director": "J.R.R. Tolkien",
-        "cast": [
-            "Bilbo Baggins",
-            "Gandalf",
-            "Thorin Meşekalkan"
-        ],
-        "summary": "Konforuna düşkün bir hobbit olan Bilbo Baggins'in, bir grup cüceyle birlikte ejderha Smaug'un hazinesini geri almak için çıktığı macera.",
-        "rating": 8.8,
-        "image": "https://placehold.co/600x900?text=Hobbit"
-    },
-    {
-        "id": 204,
-        "title": "Harry Potter ve Felsefe Taşı",
-        "type": "book",
-        "year": 1997,
-        "category": "Fantastik",
-        "director": "J.K. Rowling",
-        "cast": [
-            "Harry Potter",
-            "Hermione Granger",
-            "Ron Weasley"
-        ],
-        "summary": "Yetim bir çocuk olan Harry Potter, büyücü olduğunu öğrenir ve Hogwarts Cadılık ve Büyücülük Okulu'na davet edilir.",
-        "rating": 8.9,
-        "image": "https://placehold.co/600x900?text=Harry%20Potter%20ve%20Felsefe%20Ta%C5%9F%C4%B1"
-    },
-    {
-        "id": 205,
-        "title": "Muhteşem Gatsby",
-        "type": "book",
-        "year": 1925,
-        "category": "Klasik",
-        "director": "F. Scott Fitzgerald",
-        "cast": [
-            "Jay Gatsby",
-            "Nick Carraway",
-            "Daisy Buchanan"
-        ],
-        "summary": "Gizemli milyoner Jay Gatsby'nin, geçmişteki aşkı Daisy Buchanan'a duyduğu saplantılı tutku ve Amerikan Rüyası'nın çöküşü.",
-        "rating": 8.5,
-        "image": "https://placehold.co/600x900?text=Muhte%C5%9Fem%20Gatsby"
-    },
-    {
-        "id": 206,
-        "title": "Suç ve Ceza",
-        "type": "book",
-        "year": 1866,
-        "category": "Klasik",
-        "director": "Fyodor Dostoyevski",
-        "cast": [
-            "Rodion Raskolnikov",
-            "Sonya Marmeladova",
-            "Porfiri Petroviç"
-        ],
-        "summary": "Yoksul bir eski öğrenci olan Raskolnikov, tefeci bir kadını öldürmeyi planlar ve bu eylemin ahlaki sonuçlarıyla yüzleşir.",
-        "rating": 9.4,
-        "image": "https://placehold.co/600x900?text=Su%C3%A7%20ve%20Ceza"
-    },
-    {
-        "id": 207,
-        "title": "Sefiller",
+        "title": "Babalar ve Oğullar",
         "type": "book",
         "year": 1862,
         "category": "Klasik",
-        "director": "Victor Hugo",
-        "cast": [
-            "Jean Valjean",
-            "Javert",
-            "Cosette"
-        ],
-        "summary": "Eski bir mahkum olan Jean Valjean'ın kefaret arayışı ve 19. yüzyıl Fransa'sındaki toplumsal adaletsizliklere karşı mücadelesi.",
-        "rating": 9.2,
-        "image": "https://placehold.co/600x900?text=Sefiller"
+        "author": "İvan Turgenyev",
+        "summary": "Rus edebiyatının başyapıtlarından biri olan roman, kuşaklar arası çatışmayı ve nihilizmi, genç bir tıp öğrencisi olan Bazarov üzerinden anlatır.",
+        "rating": 8.4,
+        "image": "img/babalarveogullarkitap.jpg"
+    },
+    {
+        "id": 202,
+        "title": "Babaya Mektup",
+        "type": "book",
+        "year": 1919,
+        "category": "Biyografi",
+        "author": "Franz Kafka",
+        "summary": "Kafka'nın babasına yazdığı ancak hiç göndermediği, çocukluk korkularını, babasıyla olan karmaşık ilişkisini ve onun üzerindeki baskısını anlatan itiraf niteliğindeki mektup.",
+        "rating": 8.1,
+        "image": "img/babayamektupkitap.jpg"
+    },
+    {
+        "id": 203,
+        "title": "Beyaz Geceler",
+        "type": "book",
+        "year": 1848,
+        "category": "Klasik",
+        "author": "Fyodor Dostoyevski",
+        "summary": "Yalnız bir adamın St. Petersburg'un beyaz gecelerinde tesadüfen karşılaştığı bir kadınla kurduğu kısa süreli ama derin duygusal bağı anlatan öykü.",
+        "rating": 8.2,
+        "image": "img/beyazgeceler.kitap.jpg"
+    },
+    {
+        "id": 204,
+        "title": "Dorian Gray'in Portresi",
+        "type": "book",
+        "year": 1890,
+        "category": "Klasik",
+        "author": "Oscar Wilde",
+        "summary": "Genç ve yakışıklı Dorian Gray, ruhunu satarak ebedi gençliğe kavuşur, ancak işlediği her günah ve geçen her yıl, onun yerine portresine yansır.",
+        "rating": 8.3,
+        "image": "img/doriangrayınportesikitap.jpg"
+    },
+    {
+        "id": 205,
+        "title": "Eylül",
+        "type": "book",
+        "year": 1901,
+        "category": "Klasik",
+        "author": "Mehmet Rauf",
+        "summary": "Türk edebiyatının ilk psikolojik romanı kabul edilen eser, Suat, Süreyya ve Necip arasındaki yasak aşkı ve ruhsal çalkantıları konu alır.",
+        "rating": 7.4,
+        "image": "img/eylülkitap.jpg"
+    },
+    {
+        "id": 206,
+        "title": "Genç Bir Doktorun Anıları",
+        "type": "book",
+        "year": 1925,
+        "category": "Hikaye",
+        "author": "Mihail Bulgakov",
+        "summary": "Bulgakov'un tıp fakültesinden mezun olduktan sonra Rusya'nın ücra bir köyünde doktorluk yaptığı döneme ait trajikomik anıları.",
+        "rating": 8.0,
+        "image": "img/gencbirdoktorunanılarıkitap.jpg"
+    },
+    {
+        "id": 207,
+        "title": "Genç Werther'in Acıları",
+        "type": "book",
+        "year": 1774,
+        "category": "Klasik",
+        "author": "Johann Wolfgang von Goethe",
+        "summary": "Nişanlı bir kadına, Lotte'ye duyduğu umutsuz aşkı mektuplar aracılığıyla anlatan Werther'in giderek artan melankolisi ve trajik sonu.",
+        "rating": 7.8,
+        "image": "img/gençvertherinacılarıkitap.jpg"
     },
     {
         "id": 208,
-        "title": "Anna Karenina",
+        "title": "Gulyabani",
         "type": "book",
-        "year": 1877,
-        "category": "Klasik",
-        "director": "Lev Tolstoy",
-        "cast": [
-            "Anna Karenina",
-            "Alexei Vronsky",
-            "Konstantin Levin"
-        ],
-        "summary": "Evli bir aristokrat olan Anna Karenina'nın Kont Vronsky ile yaşadığı yasak aşk ve bunun yıkıcı sonuçları.",
-        "rating": 9.1,
-        "image": "https://placehold.co/600x900?text=Anna%20Karenina"
+        "year": 1913,
+        "category": "Roman",
+        "author": "Hüseyin Rahmi Gürpınar",
+        "summary": "İstanbul'da bir köşkte hizmetçilik yapan Muhsine'nin, köşkte dolaşan korkunç cin ve peri efsaneleri ile aslında dönen dolapları mizahi bir dille anlatan eser.",
+        "rating": 7.5,
+        "image": "img/gulyabanikitap.jpg"
     },
     {
         "id": 209,
-        "title": "Yabancı",
+        "title": "İçimizdeki Şeytan",
         "type": "book",
-        "year": 1942,
-        "category": "Felsefe",
-        "director": "Albert Camus",
-        "cast": [
-            "Meursault",
-            "Raymond Sintes",
-            "Marie Cardona"
-        ],
-        "summary": "Topluma ve hayata yabancılaşmış Meursault'nun, işlediği bir cinayetten sonraki kayıtsızlığı ve absürdizm üzerine bir anlatı.",
-        "rating": 8.7,
-        "image": "https://placehold.co/600x900?text=Yabanc%C4%B1"
+        "year": 1940,
+        "category": "Roman",
+        "author": "Sabahattin Ali",
+        "summary": "Ömer ve Macide'nin aşkı etrafında, aydın geçinen kesimin ikiyüzlülüğünü ve insanın içindeki kötülüğü sorgulayan toplumsal bir roman.",
+        "rating": 8.6,
+        "image": "img/içimizdekiseytankitap.jpg"
     },
     {
         "id": 210,
-        "title": "Dönüşüm",
+        "title": "Karamazov Kardeşler",
         "type": "book",
-        "year": 1915,
+        "year": 1880,
         "category": "Klasik",
-        "director": "Franz Kafka",
-        "cast": [
-            "Gregor Samsa",
-            "Grete Samsa",
-            "Bay Samsa"
-        ],
-        "summary": "Gregor Samsa bir sabah uyandığında kendini dev bir böceğe dönüşmüş olarak bulur ve ailesiyle olan ilişkisi geri dönülmez bir şekilde değişir.",
-        "rating": 8.9,
-        "image": "https://placehold.co/600x900?text=D%C3%B6n%C3%BC%C5%9F%C3%BCm"
+        "author": "Fyodor Dostoyevski",
+        "summary": "Baba Fyodor Karamazov'un ölümü üzerine, her biri farklı karakterdeki üç oğlu ve gayrimeşru bir çocuğunun çatışmalarını, inanç, ahlak ve özgür irade üzerinden irdeleyen başyapıt.",
+        "rating": 9.2,
+        "image": "img/karamazovkardeslerkitap.jpg"
     },
     {
         "id": 211,
-        "title": "Çalıkuşu",
-        "type": "book",
-        "year": 1922,
-        "category": "Türk Klasikleri",
-        "director": "Reşat Nuri Güntekin",
-        "cast": [
-            "Feride",
-            "Kamran",
-            "Munise"
-        ],
-        "summary": "İstanbullu genç öğretmen Feride'nin, Anadolu'nun çeşitli köylerinde öğretmenlik yaparken yaşadığı zorluklar ve aşk acısı.",
-        "rating": 9.3,
-        "image": "https://placehold.co/600x900?text=%C3%87al%C4%B1ku%C5%9Fu"
-    },
-    {
-        "id": 212,
-        "title": "İnce Memed",
-        "type": "book",
-        "year": 1955,
-        "category": "Türk Klasikleri",
-        "director": "Yaşar Kemal",
-        "cast": [
-            "İnce Memed",
-            "Hatçe",
-            "Abdi Ağa"
-        ],
-        "summary": "Toroslar'da yaşayan İnce Memed'in, ağalık düzenine ve haksızlığa karşı başkaldırarak eşkıya olmasının destansı hikayesi.",
-        "rating": 9.5,
-        "image": "https://placehold.co/600x900?text=%C4%B0nce%20Memed"
-    },
-    {
-        "id": 213,
-        "title": "Saatleri Ayarlama Enstitüsü",
-        "type": "book",
-        "year": 1961,
-        "category": "Türk Klasikleri",
-        "director": "Ahmet Hamdi Tanpınar",
-        "cast": [
-            "Hayri İrdal",
-            "Halit Ayarcı",
-            "Pakize"
-        ],
-        "summary": "Doğu ile Batı arasında sıkışmış Türk toplumunun modernleşme sürecini, absürd bir kurum olan Saatleri Ayarlama Enstitüsü üzerinden anlatan hiciv.",
-        "rating": 9.4,
-        "image": "https://placehold.co/600x900?text=Saatleri%20Ayarlama%20Enstit%C3%BCs%C3%BC"
-    },
-    {
-        "id": 214,
         "title": "Kürk Mantolu Madonna",
         "type": "book",
         "year": 1943,
-        "category": "Türk Klasikleri",
-        "director": "Sabahattin Ali",
-        "cast": [
-            "Raif Efendi",
-            "Maria Puder",
-            "Rasim"
-        ],
-        "summary": "İçine kapanık Raif Efendi'nin gençliğinde Berlin'de yaşadığı unutulmaz aşkın ve bu aşkın hayatında bıraktığı derin izlerin hikayesi.",
-        "rating": 9.2,
-        "image": "https://placehold.co/600x900?text=K%C3%BCrk%20Mantolu%20Madonna"
+        "category": "Roman",
+        "author": "Sabahattin Ali",
+        "summary": "Sessiz ve içine kapanık Raif Efendi'nin, gençliğinde Berlin'de Maria Puder ile yaşadığı unutulmaz aşkı ve bu aşkın hayatında bıraktığı derin izi anlatır.",
+        "rating": 9.0,
+        "image": "img/kürkmantolumadonnakitap.jpg"
+    },
+    {
+        "id": 212,
+        "title": "Küçük Şeyler",
+        "type": "book",
+        "year": 1891,
+        "category": "Hikaye",
+        "author": "Samipaşazade Sezai",
+        "summary": "Modern Türk hikayeciliğinin başlangıcı sayılan eser, sıradan insanların günlük hayatlarındaki küçük ama önemli anları gerçekçi bir üslupla anlatır.",
+        "rating": 7.2,
+        "image": "img/küçükşeylerkitap.jpg"
+    },
+    {
+        "id": 213,
+        "title": "Kızıl Dosya",
+        "type": "book",
+        "year": 1887,
+        "category": "Polisiye",
+        "author": "Arthur Conan Doyle",
+        "summary": "Sherlock Holmes ve Dr. Watson'ın tanıştığı ve birlikte çözdükleri ilk vaka olan, Londra'da işlenen gizemli bir cinayeti konu alan roman.",
+        "rating": 8.1,
+        "image": "img/kızılkitap.jpg"
+    },
+    {
+        "id": 214,
+        "title": "Mai ve Siyah",
+        "type": "book",
+        "year": 1897,
+        "category": "Klasik",
+        "author": "Halit Ziya Uşaklıgil",
+        "summary": "Şair olma hayalleri kuran Ahmet Cemil'in, hayallerinin 'mai'sinden hayatın acı gerçeklerinin 'siyah'ına sürüklenişini anlatan Servet-i Fünun dönemi romanı.",
+        "rating": 7.9,
+        "image": "img/maivesiyahkitap.jpg"
     },
     {
         "id": 215,
         "title": "Tutunamayanlar",
         "type": "book",
         "year": 1972,
-        "category": "Türk Klasikleri",
-        "director": "Oğuz Atay",
-        "cast": [
-            "Selim Işık",
-            "Turgut Özben",
-            "Süleyman Kargı"
-        ],
-        "summary": "İntihar eden arkadaşı Selim Işık'ın geçmişini araştıran Turgut Özben'in, modern hayata uyum sağlayamayan bireylerin dünyasına yolculuğu.",
-        "rating": 9.1,
-        "image": "https://placehold.co/600x900?text=Tutunamayanlar"
+        "category": "Roman",
+        "author": "Oğuz Atay",
+        "summary": "İntihar eden arkadaşı Selim Işık'ın geçmişini araştıran Turgut Özben'in, bu süreçte kendi hayatını ve toplumsal değerleri sorgulayarak 'tutunamayan'lara karışmasını anlatır.",
+        "rating": 8.9,
+        "image": "img/oğuzataytutunamaynlarkitap.jpg"
     },
     {
         "id": 216,
-        "title": "Aşk-ı Memnu",
+        "title": "Simyacı",
         "type": "book",
-        "year": 1900,
-        "category": "Türk Klasikleri",
-        "director": "Halid Ziya Uşaklıgil",
-        "cast": [
-            "Bihter",
-            "Behlül",
-            "Adnan Bey"
-        ],
-        "summary": "Zengin bir adamla evlenen genç Bihter'in, kocasının yeğeni Behlül ile yaşadığı yasak aşk ve bu aşkın getirdiği trajedi.",
-        "rating": 8.8,
-        "image": "https://placehold.co/600x900?text=A%C5%9Fk-%C4%B1%20Memnu"
+        "year": 1988,
+        "category": "Roman",
+        "author": "Paulo Coelho",
+        "summary": "Endülüslü çoban Santiago'nun, Mısır Piramitleri'nin eteklerinde gömülü olduğuna inandığı hazineyi aramak için çıktığı felsefi yolculuk.",
+        "rating": 8.5,
+        "image": "img/simyacıkitap.jpg"
     }
 ]

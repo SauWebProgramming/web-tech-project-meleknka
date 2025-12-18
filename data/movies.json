@@ -1,86 +1,150 @@
 [
     {
         "id": 1,
-        "title": "Inception",
+        "title": "9",
         "type": "movie",
-        "year": 2010,
-        "category": "Bilim Kurgu",
-        "director": "Christopher Nolan",
+        "year": 2009,
+        "category": "Animasyon",
+        "director": "Shane Acker",
         "cast": [
-            "Leonardo DiCaprio",
-            "Joseph Gordon-Levitt",
-            "Elliot Page"
+            "Elijah Wood",
+            "Jennifer Connelly",
+            "Christopher Plummer"
         ],
-        "summary": "Rüya paylaşım teknolojisini kullanarak kurumsal sırları çalan bir hırsıza, bir CEO'nun zihnine bir fikir yerleştirme görevi verilir.",
-        "rating": 8.8,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg"
+        "summary": "İnsanlığın yok olduğu post-apokaliptik bir dünyada, 9 numaralı bez bebek, makinelerle savaşarak hayatta kalanları kurtarmaya çalışır.",
+        "rating": 7.1,
+        "image": "img/9.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Akıl Oyunları",
+        "type": "movie",
+        "year": 2001,
+        "category": "Biyografi",
+        "director": "Ron Howard",
+        "cast": [
+            "Russell Crowe",
+            "Ed Harris",
+            "Jennifer Connelly"
+        ],
+        "summary": "Nobel ödüllü matematikçi John Nash'in şizofreni ile mücadelesini ve dehasını konu alan etkileyici bir biyografi.",
+        "rating": 8.2,
+        "image": "img/abeatufulmindjpg.jpg"
     },
     {
         "id": 3,
-        "title": "Yıldızlararası",
+        "title": "Güneş Sonrası",
         "type": "movie",
-        "year": 2014,
-        "category": "Bilim Kurgu",
-        "director": "Christopher Nolan",
+        "year": 2022,
+        "category": "Dram",
+        "director": "Charlotte Wells",
         "cast": [
-            "Matthew McConaughey",
-            "Anne Hathaway",
-            "Jessica Chastain"
+            "Paul Mescal",
+            "Frankie Corio",
+            "Celia Rowlson-Hall"
         ],
-        "summary": "Bir grup kaşif, insanlığın hayatta kalmasını sağlamak için uzaydaki bir solucan deliğinden geçer.",
-        "rating": 8.6,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCUYVSeablMI.jpg"
+        "summary": "Sophie, yirmi yıl önce babasıyla çıktığı bir tatili ve o dönem tanıdığını sandığı babası ile gerçek babası arasındaki boşlukları hatırlar.",
+        "rating": 7.7,
+        "image": "img/aftersun.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Arkadaşımın Evi Nerede?",
+        "type": "movie",
+        "year": 1987,
+        "category": "Dram",
+        "director": "Abbas Kiarostami",
+        "cast": [
+            "Babek Ahmedpur",
+            "Ahmed Ahmedpur",
+            "Kheda Barech"
+        ],
+        "summary": "Arkadaşının defterini yanlışlıkla alan küçük bir çocuk, arkadaşı okuldan atılmasın diye defteri geri vermek için komşu köye zorlu bir yolculuk yapar.",
+        "rating": 8.1,
+        "image": "img/arkaşımınevinerde.jpg"
     },
     {
         "id": 5,
-        "title": "Baba",
+        "title": "Ateşböceklerinin Mezarı",
         "type": "movie",
-        "year": 1972,
-        "category": "Suç",
-        "director": "Francis Ford Coppola",
+        "year": 1988,
+        "category": "Animasyon",
+        "director": "Isao Takahata",
         "cast": [
-            "Marlon Brando",
-            "Al Pacino",
-            "James Caan"
+            "Tsutomu Tatsumi",
+            "Ayano Shiraishi",
+            "Yoshiko Shinohara"
         ],
-        "summary": "Organize suç hanedanının yaşlanan patriği, gizli imparatorluğunun kontrolünü isteksiz oğluna devreder.",
-        "rating": 9.2,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enUSQD19bFKmwDg.jpg"
+        "summary": "İkinci Dünya Savaşı'nın sonlarında Japonya'da hayatta kalmaya çalışan iki kardeşin, Seita ve Setsuko'nun yürek burkan hikayesi.",
+        "rating": 8.5,
+        "image": "img/ateşboceklerininmezarliklari.jpg"
     },
     {
         "id": 6,
-        "title": "Memoir of a Snail",
+        "title": "Büyük Budapeşte Oteli",
         "type": "movie",
-        "year": 2024,
-        "category": "Animasyon",
-        "director": "Adam Elliot",
+        "year": 2014,
+        "category": "Komedi",
+        "director": "Wes Anderson",
         "cast": [
-            "Sarah Snook",
-            "Kodi Smit-McPhee",
-            "Eric Bana"
+            "Ralph Fiennes",
+            "F. Murray Abraham",
+            "Mathieu Amalric"
         ],
-        "summary": "Avustralya'da 1970'lerde geçen film, talihsizliklerle dolu hayatında teselliyi salyangoz toplamakta bulan Grace Pudel'in dokunaklı hikayesini anlatıyor.",
+        "summary": "İki savaş arası dönemde ünlü bir Avrupa otelinde kapıcı olan Gustave H. ile onun en güvendiği arkadaşı olan lobi görevlisi Zero Moustafa'nın maceraları.",
         "rating": 8.1,
-        "image": "img/memoir_of_a_snail.jpg"
+        "image": "img/budapeşteoteli.jpg"
     },
     {
         "id": 7,
-        "title": "Ruhların Kaçışı",
+        "title": "Ernest ve Celestine",
         "type": "movie",
-        "year": 2001,
+        "year": 2012,
         "category": "Animasyon",
-        "director": "Hayao Miyazaki",
+        "director": "Stéphane Aubier, Vincent Patar",
         "cast": [
-            "Rumi Hiiragi",
-            "Miyu Irino",
-            "Mari Natsuki"
+            "Lambert Wilson",
+            "Pauline Brunner",
+            "Anne-Marie Loop"
         ],
-        "summary": "Ailesiyle yeni bir mahalleye taşınan 10 yaşındaki Chihiro, tanrılar, cadılar ve ruhların dünyasına girer ve burada insanların canavara dönüştüğünü keşfeder.",
-        "rating": 8.6,
-        "image": "img/ruhlar_n_ka____.jpg"
+        "summary": "Ayı Ernest ve fare Celestine'in beklenmedik dostluğunu anlatan, önyargıların yıkıldığı sıcak bir animasyon.",
+        "rating": 7.9,
+        "image": "img/ernestandcelestine.jpg"
     },
     {
         "id": 8,
+        "title": "Tavşan Jojo",
+        "type": "movie",
+        "year": 2019,
+        "category": "Komedi",
+        "director": "Taika Waititi",
+        "cast": [
+            "Roman Griffin Davis",
+            "Thomasin McKenzie",
+            "Scarlett Johansson"
+        ],
+        "summary": "İkinci Dünya Savaşı Almanya'sında, hayali arkadaşı Adolf Hitler olan yalnız bir Alman çocuğun, annesinin evlerinde Yahudi bir kızı sakladığını keşfetmesiyle dünyası altüst olur.",
+        "rating": 7.9,
+        "image": "img/jojorabbit.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Cennetin Krallığı",
+        "type": "movie",
+        "year": 2005,
+        "category": "Aksiyon",
+        "director": "Ridley Scott",
+        "cast": [
+            "Orlando Bloom",
+            "Eva Green",
+            "Liam Neeson"
+        ],
+        "summary": "Genç bir demirci olan Balian, 12. yüzyıldaki Haçlı Seferleri sırasında Kudüs'ü savunmak için şövalye olur ve kaderiyle yüzleşir.",
+        "rating": 7.2,
+        "image": "img/kingdomofheaven.jpg"
+    },
+    {
+        "id": 10,
         "title": "Komşum Totoro",
         "type": "movie",
         "year": 1988,
@@ -96,215 +160,7 @@
         "image": "img/kom_um_totoro.jpg"
     },
     {
-        "id": 9,
-        "title": "Büyük Budapeşte Oteli",
-        "type": "movie",
-        "year": 2014,
-        "category": "Komedi",
-        "director": "Wes Anderson",
-        "cast": [
-            "Ralph Fiennes",
-            "F. Murray Abraham",
-            "Mathieu Amalric"
-        ],
-        "summary": "İki savaş arası dönemde ünlü bir Avrupa otelinde kapıcı olan Gustave H. ile onun en güvendiği arkadaşı olan lobi görevlisi Zero Moustafa'nın maceraları.",
-        "rating": 8.1,
-        "image": "https://placehold.co/600x900?text=B%C3%BCy%C3%BCk%20Budape%C5%9Fte%20Oteli"
-    },
-    {
-        "id": 10,
-        "title": "Yaman Tilki",
-        "type": "movie",
-        "year": 2009,
-        "category": "Animasyon",
-        "director": "Wes Anderson",
-        "cast": [
-            "George Clooney",
-            "Meryl Streep",
-            "Bill Murray"
-        ],
-        "summary": "Kurnaz bir tilki, ailesini beslemek için üç kötü çiftçiden yiyecek çalar, ancak çiftçiler onu öldürmeye karar verince yer altına inmek zorunda kalır.",
-        "rating": 7.9,
-        "image": "https://placehold.co/600x900?text=Yaman%20Tilki"
-    },
-    {
-        "id": 12,
-        "title": "Ölü Gelin",
-        "type": "movie",
-        "year": 2005,
-        "category": "Animasyon",
-        "director": "Tim Burton, Mike Johnson",
-        "cast": [
-            "Johnny Depp",
-            "Helena Bonham Carter",
-            "Emily Watson"
-        ],
-        "summary": "Utangaç bir damat, düğün provasında yanlışlıkla ölü bir gelini diriltir ve kendini Ölüler Diyarı'nda bulur.",
-        "rating": 7.3,
-        "image": "img/_l__gelin.jpg"
-    },
-    {
-        "id": 14,
-        "title": "Kirazın Tadı",
-        "type": "movie",
-        "year": 1997,
-        "category": "Dram",
-        "director": "Abbas Kiarostami",
-        "cast": [
-            "Homayoun Ershadi",
-            "Abdolrahman Bagheri",
-            "Afshin Khorshid Bakhtiari"
-        ],
-        "summary": "İntihar etmeyi planlayan orta yaşlı bir adam, kendisini gömmeyi kabul edecek birini bulmak için Tahran'ın eteklerinde arabasıyla dolaşır.",
-        "rating": 7.7,
-        "image": "https://placehold.co/600x900?text=Kiraz%C4%B1n%20Tad%C4%B1"
-    },
-    {
-        "id": 18,
-        "title": "Dövüş Kulübü",
-        "type": "movie",
-        "year": 1999,
-        "category": "Dram",
-        "director": "David Fincher",
-        "cast": [
-            "Brad Pitt",
-            "Edward Norton",
-            "Meat Loaf"
-        ],
-        "summary": "Uykusuzluk çeken bir ofis çalışanı ve karizmatik bir sabun üreticisi, yeraltı dövüş kulübü kurar ve bu kulüp çok daha büyük bir şeye dönüşür.",
-        "rating": 8.8,
-        "image": "img/d_v___kul_b_.jpg"
-    },
-    {
-        "id": 19,
-        "title": "Yüzüklerin Efendisi: Yüzük Kardeşliği",
-        "type": "movie",
-        "year": 2001,
-        "category": "Fantastik",
-        "director": "Peter Jackson",
-        "cast": [
-            "Elijah Wood",
-            "Ian McKellen",
-            "Orlando Bloom"
-        ],
-        "summary": "Uysal bir Hobbit ve sekiz arkadaşı, güçlü Tek Yüzüğü yok etmek ve Orta Dünya'yı Karanlık Lord Sauron'dan kurtarmak için bir yolculuğa çıkar.",
-        "rating": 8.8,
-        "image": "img/y_z_klerin_efendisi__y_z_k_karde_li_i.jpg"
-    },
-    {
-        "id": 20,
-        "title": "Matrix",
-        "type": "movie",
-        "year": 1999,
-        "category": "Bilim Kurgu",
-        "director": "Lana Wachowski, Lilly Wachowski",
-        "cast": [
-            "Keanu Reeves",
-            "Laurence Fishburne",
-            "Carrie-Anne Moss"
-        ],
-        "summary": "Bir bilgisayar korsanı, gizemli isyancılardan gerçeğin doğasını ve insanlığa karşı savaşını öğrenir.",
-        "rating": 8.7,
-        "image": "img/matrix.jpg"
-    },
-    {
-        "id": 22,
-        "title": "Rüzgarlı Vadi",
-        "type": "movie",
-        "year": 1984,
-        "category": "Animasyon",
-        "director": "Hayao Miyazaki",
-        "cast": [
-            "Sumi Shimamoto",
-            "Mahito Tsujimura",
-            "Hisako Kyôda"
-        ],
-        "summary": "Kıyamet sonrası bir dünyada, Rüzgarlı Vadi'nin prensesi Nausicaä, dev böcekler ve zehirli bitkilerle dolu bir ormanın yayılmasını engellemeye ve insanlığı savaştan korumaya çalışır.",
-        "rating": 8,
-        "image": "https://placehold.co/600x900?text=R%C3%BCzgarl%C4%B1%20Vadi"
-    },
-    {
-        "id": 23,
-        "title": "Gökteki Kale",
-        "type": "movie",
-        "year": 1986,
-        "category": "Animasyon",
-        "director": "Hayao Miyazaki",
-        "cast": [
-            "Mayumi Tanaka",
-            "Keiko Yokozawa",
-            "Kotoe Hatsui"
-        ],
-        "summary": "Genç bir madenci ve gizemli bir kız, efsanevi bir uçan kaleyi bulmak için korsanlar ve hükümet ajanlarıyla yarışır.",
-        "rating": 8,
-        "image": "https://placehold.co/600x900?text=G%C3%B6kteki%20Kale"
-    },
-    {
-        "id": 24,
-        "title": "Küçük Cadı Kiki",
-        "type": "movie",
-        "year": 1989,
-        "category": "Animasyon",
-        "director": "Hayao Miyazaki",
-        "cast": [
-            "Minami Takayama",
-            "Rei Sakuma",
-            "Kappei Yamaguchi"
-        ],
-        "summary": "Genç bir cadı olan Kiki, eğitimi için yeni bir şehre taşınır ve uçan süpürgesiyle bir kurye servisi başlatarak bağımsızlığını kazanmaya çalışır.",
-        "rating": 7.8,
-        "image": "https://placehold.co/600x900?text=K%C3%BC%C3%A7%C3%BCk%20Cad%C4%B1%20Kiki"
-    },
-    {
-        "id": 25,
-        "title": "Kırmızı Kanatlar",
-        "type": "movie",
-        "year": 1992,
-        "category": "Animasyon",
-        "director": "Hayao Miyazaki",
-        "cast": [
-            "Shûichirô Moriyama",
-            "Tokiko Katô",
-            "Bunshi Katsura Vi"
-        ],
-        "summary": "1930'ların İtalya'sında, bir lanet yüzünden domuza dönüşen bir pilot, hava korsanlarıyla savaşır.",
-        "rating": 7.7,
-        "image": "img/k_rm_z__kanatlar.jpg"
-    },
-    {
-        "id": 26,
-        "title": "Prenses Mononoke",
-        "type": "movie",
-        "year": 1997,
-        "category": "Animasyon",
-        "director": "Hayao Miyazaki",
-        "cast": [
-            "Yôji Matsuda",
-            "Yuriko Ishida",
-            "Yûko Tanaka"
-        ],
-        "summary": "Bir laneti kaldırmak için yolculuğa çıkan Prens Ashitaka, ormanı koruyan Prenses Mononoke ile doğayı yok etmeye çalışan insanlar arasındaki savaşın ortasında kalır.",
-        "rating": 8.4,
-        "image": "img/prenses_mononoke.jpg"
-    },
-    {
-        "id": 27,
-        "title": "Yürüyen Şato",
-        "type": "movie",
-        "year": 2004,
-        "category": "Animasyon",
-        "director": "Hayao Miyazaki",
-        "cast": [
-            "Chieko Baishô",
-            "Takuya Kimura",
-            "Akihiro Miwa"
-        ],
-        "summary": "Kötü bir cadı tarafından yaşlı bir kadına dönüştürülen Sophie, büyücü Howl'un yürüyen şatosuna sığınır ve laneti bozmanın yollarını arar.",
-        "rating": 8.2,
-        "image": "img/y_r_yen__ato.jpg"
-    },
-    {
-        "id": 28,
+        "id": 11,
         "title": "Küçük Deniz Kızı Ponyo",
         "type": "movie",
         "year": 2008,
@@ -320,7 +176,118 @@
         "image": "img/k___k_deniz_k_z__ponyo.jpg"
     },
     {
-        "id": 29,
+        "id": 12,
+        "title": "Kırmızı Kanatlar",
+        "type": "movie",
+        "year": 1992,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Shûichirô Moriyama",
+            "Tokiko Katô",
+            "Bunshi Katsura Vi"
+        ],
+        "summary": "1930'ların İtalya'sında, bir lanet yüzünden domuza dönüşen bir pilot, hava korsanlarıyla savaşır.",
+        "rating": 7.7,
+        "image": "img/k_rm_z__kanatlar.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Aşıklar Şehri",
+        "type": "movie",
+        "year": 2016,
+        "category": "Müzikal",
+        "director": "Damien Chazelle",
+        "cast": [
+            "Ryan Gosling",
+            "Emma Stone",
+            "Rosemarie DeWitt"
+        ],
+        "summary": "Los Angeles'ta yolları kesişen bir piyanist ve bir oyuncunun, hayallerini gerçekleştirme çabası ve aralarındaki aşk hikayesi.",
+        "rating": 8.0,
+        "image": "img/lalalandjpg.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Look Back",
+        "type": "movie",
+        "year": 2024,
+        "category": "Animasyon",
+        "director": "Kiyotaka Oshiyama",
+        "cast": [
+            "Yumi Kawai",
+            "Mizuki Yoshida"
+        ],
+        "summary": "Manga çizmeye tutkulu iki genç kızın, çizim aracılığıyla kurdukları bağ ve zamanla değişen hayatlarını konu alan duygusal bir hikaye.",
+        "rating": 8.5,
+        "image": "img/lookbackjpg.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Malefiz",
+        "type": "movie",
+        "year": 2014,
+        "category": "Fantastik",
+        "director": "Robert Stromberg",
+        "cast": [
+            "Angelina Jolie",
+            "Elle Fanning",
+            "Sharlto Copley"
+        ],
+        "summary": "Uyuyan Güzel masalının kötü perisi Malefiz'in, ihanete uğrayıp kalbinin taşa dönmesini ve Prenses Aurora ile olan ilişkisini anlatan bir yeniden yorumlama.",
+        "rating": 6.9,
+        "image": "img/malefiz.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Memoir of a Snail",
+        "type": "movie",
+        "year": 2024,
+        "category": "Animasyon",
+        "director": "Adam Elliot",
+        "cast": [
+            "Sarah Snook",
+            "Kodi Smit-McPhee",
+            "Eric Bana"
+        ],
+        "summary": "Avustralya'da 1970'lerde geçen film, talihsizliklerle dolu hayatında teselliyi salyangoz toplamakta bulan Grace Pudel'in dokunaklı hikayesini anlatıyor.",
+        "rating": 8.1,
+        "image": "img/memoir_of_a_snail.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Ölü Gelin",
+        "type": "movie",
+        "year": 2005,
+        "category": "Animasyon",
+        "director": "Tim Burton, Mike Johnson",
+        "cast": [
+            "Johnny Depp",
+            "Helena Bonham Carter",
+            "Emily Watson"
+        ],
+        "summary": "Utangaç bir damat, düğün provasında yanlışlıkla ölü bir gelini diriltir ve kendini Ölüler Diyarı'nda bulur.",
+        "rating": 7.3,
+        "image": "img/olugelin.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Prenses Mononoke",
+        "type": "movie",
+        "year": 1997,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Yôji Matsuda",
+            "Yuriko Ishida",
+            "Yûko Tanaka"
+        ],
+        "summary": "Bir laneti kaldırmak için yolculuğa çıkan Prens Ashitaka, ormanı koruyan Prenses Mononoke ile doğayı yok etmeye çalışan insanlar arasındaki savaşın ortasında kalır.",
+        "rating": 8.4,
+        "image": "img/prenses_mononoke.jpg"
+    },
+    {
+        "id": 19,
         "title": "Rüzgar Yükseliyor",
         "type": "movie",
         "year": 2013,
@@ -336,19 +303,163 @@
         "image": "img/r_zgar_y_kseliyor.jpg"
     },
     {
-        "id": 30,
-        "title": "Çocuk ve Balıkçıl",
+        "id": 20,
+        "title": "Ruhların Kaçışı",
         "type": "movie",
-        "year": 2023,
+        "year": 2001,
         "category": "Animasyon",
         "director": "Hayao Miyazaki",
         "cast": [
-            "Soma Santoki",
-            "Masaki Suda",
-            "Ko Shibasaki"
+            "Rumi Hiiragi",
+            "Miyu Irino",
+            "Mari Natsuki"
         ],
-        "summary": "Annesini kaybeden Mahito, gizemli bir balıkçıl kuşunun rehberliğinde fantastik bir dünyaya adım atar.",
+        "summary": "Ailesiyle yeni bir mahalleye taşınan 10 yaşındaki Chihiro, tanrılar, cadılar ve ruhların dünyasına girer ve burada insanların canavara dönüştüğünü keşfeder.",
+        "rating": 8.6,
+        "image": "img/ruhlar_n_ka____.jpg"
+    },
+    {
+        "id": 21,
+        "title": "Cennetin Rengi",
+        "type": "movie",
+        "year": 1999,
+        "category": "Dram",
+        "director": "Majid Majidi",
+        "cast": [
+            "Mohsen Ramezani",
+            "Hossein Mahjoub",
+            "Salameh Feyzi"
+        ],
+        "summary": "Tahran'daki bir körler okulunda eğitim gören görme engelli Muhammed'in, yaz tatili için köyüne dönmesi ve babasıyla olan ilişkisini konu alan duygusal bir film.",
+        "rating": 8.2,
+        "image": "img/thecolorofparadise.jpg"
+    },
+    {
+        "id": 22,
+        "title": "Düşüş",
+        "type": "movie",
+        "year": 2006,
+        "category": "Macera",
+        "director": "Tarsem Singh",
+        "cast": [
+            "Lee Pace",
+            "Catinca Untaru",
+            "Justine Waddell"
+        ],
+        "summary": "Hastanede yatan sakat bir dublör, kolu kırık küçük bir kıza intikam peşindeki beş efsanevi kahramanın fantastik hikayesini anlatır.",
+        "rating": 7.8,
+        "image": "img/thefall.jpg"
+    },
+    {
+        "id": 23,
+        "title": "Noel Gecesi Kabusu",
+        "type": "movie",
+        "year": 1993,
+        "category": "Animasyon",
+        "director": "Henry Selick",
+        "cast": [
+            "Danny Elfman",
+            "Chris Sarandon",
+            "Catherine O'Hara"
+        ],
+        "summary": "Cadılar Bayramı Kenti'nin bal kabağı kralı Jack Skellington, Noel Kenti'ni keşfeder ve Noel'i kendi tarzında kutlamaya karar verir.",
+        "rating": 7.9,
+        "image": "img/thenigtmare.jpg"
+    },
+    {
+        "id": 24,
+        "title": "Tenenbaum Ailesi",
+        "type": "movie",
+        "year": 2001,
+        "category": "Komedi",
+        "director": "Wes Anderson",
+        "cast": [
+            "Gene Hackman",
+            "Gwyneth Paltrow",
+            "Luke Wilson"
+        ],
+        "summary": "Birbirinden kopuk ve her biri farklı alanlarda dahi olan Tenenbaum kardeşler, babaları öleceğini söyleyince yıllar sonra tekrar bir araya gelirler.",
         "rating": 7.6,
-        "image": "https://placehold.co/600x900?text=%C3%87ocuk%20ve%20Bal%C4%B1k%C3%A7%C4%B1l"
+        "image": "img/theroyaltenenbaums.jpg"
+    },
+    {
+        "id": 25,
+        "title": "Titanik",
+        "type": "movie",
+        "year": 1997,
+        "category": "Romantik",
+        "director": "James Cameron",
+        "cast": [
+            "Leonardo DiCaprio",
+            "Kate Winslet",
+            "Billy Zane"
+        ],
+        "summary": "17 yaşındaki aristokrat bir kız, rüyaların gemisi Titanik'te fakir ama yetenekli bir ressama aşık olur.",
+        "rating": 7.9,
+        "image": "img/titanic.jpg"
+    },
+    {
+        "id": 26,
+        "title": "Yürüyen Şato",
+        "type": "movie",
+        "year": 2004,
+        "category": "Animasyon",
+        "director": "Hayao Miyazaki",
+        "cast": [
+            "Chieko Baishô",
+            "Takuya Kimura",
+            "Akihiro Miwa"
+        ],
+        "summary": "Kötü bir cadı tarafından yaşlı bir kadına dönüştürülen Sophie, büyücü Howl'un yürüyen şatosuna sığınır ve laneti bozmanın yollarını arar.",
+        "rating": 8.2,
+        "image": "img/y_r_yen__ato.jpg"
+    },
+    {
+        "id": 27,
+        "title": "Yüzüklerin Efendisi: Yüzük Kardeşliği",
+        "type": "movie",
+        "year": 2001,
+        "category": "Fantastik",
+        "director": "Peter Jackson",
+        "cast": [
+            "Elijah Wood",
+            "Ian McKellen",
+            "Orlando Bloom"
+        ],
+        "summary": "Uysal bir Hobbit ve sekiz arkadaşı, güçlü Tek Yüzüğü yok etmek ve Orta Dünya'yı Karanlık Lord Sauron'dan kurtarmak için bir yolculuğa çıkar.",
+        "rating": 8.8,
+        "image": "img/y_z_klerin_efendisi__y_z_k_karde_li_i.jpg"
+    },
+    {
+        "id": 28,
+        "title": "Yeşil Yol",
+        "type": "movie",
+        "year": 1999,
+        "category": "Suç",
+        "director": "Frank Darabont",
+        "cast": [
+            "Tom Hanks",
+            "Michael Clarke Duncan",
+            "David Morse"
+        ],
+        "summary": "Bir hapishane görevlisi, inatçı bir hastalığı iyileştirebilen gizemli bir siyahi mahkumun aslında idamı hak etmediğini fark eder.",
+        "rating": 8.6,
+        "image": "img/yeşilyol.jpg"
+    },
+    {
+        "id": 29,
+        "title": "Yıldızlararası",
+        "type": "movie",
+        "year": 2014,
+        "category": "Bilim Kurgu",
+        "director": "Christopher Nolan",
+        "cast": [
+            "Matthew McConaughey",
+            "Anne Hathaway",
+            "Jessica Chastain"
+        ],
+        "summary": "Bir grup kaşif, insanlığın hayatta kalmasını sağlamak için uzaydaki bir solucan deliğinden geçer.",
+        "rating": 8.6,
+        "image": "img/yildizlararasi.jpg"
     }
 ]

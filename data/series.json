@@ -1,82 +1,305 @@
 [
     {
         "id": 101,
-        "title": "Breaking Bad",
+        "title": "Arcane",
         "type": "series",
-        "year": 2008,
-        "category": "Crime",
-        "director": "Vince Gilligan",
+        "year": 2021,
+        "category": "Animasyon",
+        "director": "Christian Linke, Alex Yee",
         "cast": [
-            "Bryan Cranston",
-            "Aaron Paul",
-            "Anna Gunn"
+            "Hailee Steinfeld",
+            "Ella Purnell",
+            "Kevin Alejandro"
         ],
-        "summary": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
-        "rating": 9.5,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
+        "summary": "Zengin Piltover ve yeraltı şehri Zaun arasındaki çatışmanın ortasında, iki kız kardeş karşıt taraflarda savaşır.",
+        "rating": 9.0,
+        "image": "img/arcane.jpg"
     },
     {
         "id": 102,
-        "title": "Attack on Titan",
+        "title": "Band of Brothers",
         "type": "series",
-        "year": 2013,
-        "category": "Anime",
-        "director": "Tetsurô Araki",
+        "year": 2001,
+        "category": "Savaş",
+        "director": "Tom Hanks, Steven Spielberg (Yapımcılar)",
         "cast": [
-            "Yûki Kaji",
-            "Yui Ishikawa",
-            "Marina Inoue"
+            "Scott Grimes",
+            "Damian Lewis",
+            "Ron Livingston"
         ],
-        "summary": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-        "rating": 9,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8C5gDxV5b1x0ZOgM5bO3l4h8j7i.jpg"
+        "summary": "İkinci Dünya Savaşı sırasında Amerikan ordusunun 506. Alayı'nın Easy Bölüğü'nün eğitimden savaşın sonuna kadar yaşadıklarını anlatan mini dizi.",
+        "rating": 9.4,
+        "image": "img/bandofbrothers.jpg"
     },
     {
         "id": 103,
-        "title": "Game of Thrones",
+        "title": "The Big Bang Theory",
         "type": "series",
-        "year": 2011,
-        "category": "Action",
-        "director": "David Benioff",
+        "year": 2007,
+        "category": "Komedi",
+        "director": "Chuck Lorre, Bill Prady",
         "cast": [
-            "Emilia Clarke",
-            "Peter Dinklage",
-            "Kit Harington"
+            "Johnny Galecki",
+            "Jim Parsons",
+            "Kaley Cuoco"
         ],
-        "summary": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
-        "rating": 9.3,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9TWA754QnCKqQzSjaLo.jpg"
+        "summary": "Sosyal becerileri zayıf iki fizikçi ev arkadaşının hayatı, karşı daireye taşınan güzel ve dışa dönük bir garsonla değişir.",
+        "rating": 8.1,
+        "image": "img/bigbangteori.jpg"
     },
     {
         "id": 104,
-        "title": "Death Note",
+        "title": "Bleach",
         "type": "series",
-        "year": 2006,
-        "category": "Anime",
-        "director": "Tetsurô Araki",
+        "year": 2004,
+        "category": "Animasyon",
+        "director": "Noriyuki Abe",
         "cast": [
-            "Mamoru Miyano",
-            "Brad Swaile",
-            "Vincent Tong"
+            "Masakazu Morita",
+            "Fumiko Orikasa",
+            "Hiroki Yasumoto"
         ],
-        "summary": "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
-        "rating": 9,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tCzfDqUq3rWjGgG5tJ5h5b5f5.jpg"
+        "summary": "Ruhları görme yeteneğine sahip lise öğrencisi Ichigo Kurosaki, bir Ruh biçici'nin güçlerini kazanınca dünyayı kötü ruhlardan korumaya başlar.",
+        "rating": 8.1,
+        "image": "img/bleach.jpg"
     },
     {
         "id": 105,
+        "title": "Brooklyn Nine-Nine",
+        "type": "series",
+        "year": 2013,
+        "category": "Komedi",
+        "director": "Dan Goor, Michael Schur",
+        "cast": [
+            "Andy Samberg",
+            "Stephanie Beatriz",
+            "Terry Crews"
+        ],
+        "summary": "New York Polis Departmanı'nın 99. Bölgesi'ndeki dedektiflerin ve onların ciddi ama sevecen kaptanlarının komik maceraları.",
+        "rating": 8.4,
+        "image": "img/brokleen99.jpg"
+    },
+    {
+        "id": 106,
+        "title": "Chernobyl",
+        "type": "series",
+        "year": 2019,
+        "category": "Dram",
+        "director": "Craig Mazin",
+        "cast": [
+            "Jared Harris",
+            "Stellan Skarsgård",
+            "Emily Watson"
+        ],
+        "summary": "1986'da Çernobil Nükleer Santrali'nde meydana gelen felaketi ve sonrasında yaşananları anlatan, gerilim dolu bir mini dizi.",
+        "rating": 9.4,
+        "image": "img/chernobyljpg.jpg"
+    },
+    {
+        "id": 107,
+        "title": "Dark",
+        "type": "series",
+        "year": 2017,
+        "category": "Bilim Kurgu",
+        "director": "Baran bo Odar, Jantje Friese",
+        "cast": [
+            "Louis Hofmann",
+            "Karoline Eichhorn",
+            "Lisa Vicari"
+        ],
+        "summary": "Almanya'da bir kasabada iki çocuğun kaybolması, dört ailenin arasındaki karanlık sırları ve zaman yolculuğuyla dolu bir gizemi ortaya çıkarır.",
+        "rating": 8.8,
+        "image": "img/dark.jpg"
+    },
+    {
+        "id": 108,
+        "title": "Dekalog",
+        "type": "series",
+        "year": 1989,
+        "category": "Dram",
+        "director": "Krzysztof Kieslowski",
+        "cast": [
+            "Artur Barcis",
+            "Olgierd Lukaszewicz",
+            "Olaf Lubaszenko"
+        ],
+        "summary": "On Emir'den esinlenen, her biri farklı bir ahlaki ikilemi ele alan on bölümlük bir televizyon filmi serisi.",
+        "rating": 9.0,
+        "image": "img/dekalog.jpg"
+    },
+    {
+        "id": 109,
+        "title": "Doktorlar",
+        "type": "series",
+        "year": 2006,
+        "category": "Dram",
+        "director": "Merve Girgin",
+        "cast": [
+            "Kutsi",
+            "Yasemin Ergene",
+            "Leyla Göksun"
+        ],
+        "summary": "Bir eğitim ve araştırma hastanesinde çalışan doktorların mesleki zorluklarını, aşklarını ve hayat mücadelelerini konu alır.",
+        "rating": 6.8,
+        "image": "img/doktorlardizi.jpg"
+    },
+    {
+        "id": 110,
+        "title": "Kanıt",
+        "type": "series",
+        "year": 2010,
+        "category": "Suç",
+        "director": "Biray Dalkıran",
+        "cast": [
+            "Engin Benli",
+            "Deniz Celiloğlu",
+            "Sebil Savacı"
+        ],
+        "summary": "İstanbul Emniyet Müdürlüğü Cinayet Masası'nda görevli Başkomiser Orhan ve Komiser Selim'in, Adli Tıp uzmanlarının yardımıyla çözdüğü cinayet vakaları.",
+        "rating": 8.3,
+        "image": "img/kanıtdizi.jpg"
+    },
+    {
+        "id": 111,
+        "title": "Modern Family",
+        "type": "series",
+        "year": 2009,
+        "category": "Komedi",
+        "director": "Steven Levitan, Christopher Lloyd",
+        "cast": [
+            "Ed O'Neill",
+            "Sofía Vergara",
+            "Julie Bowen"
+        ],
+        "summary": "Farklı kuşaklardan ve yaşam tarzlarından gelen üç ailenin (bir geleneksel, bir eşcinsel ve bir çok kültürlü) komik ve iç içe geçmiş hayatları.",
+        "rating": 8.5,
+        "image": "img/modernfamily.jpg"
+    },
+    {
+        "id": 112,
+        "title": "One Piece",
+        "type": "series",
+        "year": 1999,
+        "category": "Animasyon",
+        "director": "Eiichiro Oda (Yaratıcı)",
+        "cast": [
+            "Mayumi Tanaka",
+            "Akemi Okamura",
+            "Kazuya Nakai"
+        ],
+        "summary": "Monkey D. Luffy ve korsan tayfası, efsanevi hazine 'One Piece'i bulmak ve Korsanlar Kralı olmak için okyanuslarda macera dolu bir yolculuğa çıkar.",
+        "rating": 8.9,
+        "image": "img/onepiece.jpg"
+    },
+    {
+        "id": 113,
+        "title": "Sürekli Dizi",
+        "type": "series",
+        "year": 2010,
+        "category": "Animasyon",
+        "director": "J.G. Quintel",
+        "cast": [
+            "J.G. Quintel",
+            "William Salyers",
+            "Sam Marin"
+        ],
+        "summary": "Bir parkta çalışan mavi karga Mordecai ve rakun Rigby'nin, işten kaytarmak için girdikleri sürreal maceralar.",
+        "rating": 8.5,
+        "image": "img/regularshow.jpg"
+    },
+    {
+        "id": 114,
         "title": "Stranger Things",
         "type": "series",
         "year": 2016,
-        "category": "Sci-Fi",
+        "category": "Bilim Kurgu",
         "director": "The Duffer Brothers",
         "cast": [
             "Millie Bobby Brown",
             "Finn Wolfhard",
             "Winona Ryder"
         ],
-        "summary": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+        "summary": "1980'lerde küçük bir kasabada bir çocuğun kaybolması, gizli deneyleri, korkutucu doğaüstü güçleri ve tuhaf bir küçük kızı ortaya çıkarır.",
         "rating": 8.7,
-        "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+        "image": "img/strangerthings.jpg"
+    },
+    {
+        "id": 115,
+        "title": "The Expanse",
+        "type": "series",
+        "year": 2015,
+        "category": "Bilim Kurgu",
+        "director": "Mark Fergus, Hawk Ostby",
+        "cast": [
+            "Steven Strait",
+            "Dominique Tipper",
+            "Wes Chatham"
+        ],
+        "summary": "Güneş sisteminin kolonileştirildiği bir gelecekte, bir dedektif ve bir uzay gemisi kaptanı, insanlık tarihinin en büyük komplosunu ortaya çıkarmak için birleşir.",
+        "rating": 8.5,
+        "image": "img/theexpanse.jpg"
+    },
+    {
+        "id": 116,
+        "title": "The Office",
+        "type": "series",
+        "year": 2005,
+        "category": "Komedi",
+        "director": "Greg Daniels",
+        "cast": [
+            "Steve Carell",
+            "Jenna Fischer",
+            "John Krasinski"
+        ],
+        "summary": "Bir kağıt şirketinin Scranton şubesindeki ofis çalışanlarının günlük, sıradan ama bir o kadar da komik hayatlarını anlatan sahte belgesel.",
+        "rating": 9.0,
+        "image": "img/theoffice.jpg"
+    },
+    {
+        "id": 117,
+        "title": "Kaptan Tsubasa",
+        "type": "series",
+        "year": 1983,
+        "category": "Animasyon",
+        "director": "Hiroyoshi Mitsunobu",
+        "cast": [
+            "Yōko Ogai",
+            "Akari Hibino"
+        ],
+        "summary": "Futbol aşığı Tsubasa Oozora'nın, en iyi futbolcu olma hayaliyle çıktığı yolda rakipleriyle mücadelesini ve dostluklarını anlatan efsanevi anime.",
+        "rating": 8.2,
+        "image": "img/tsubasa.jpg"
+    },
+    {
+        "id": 118,
+        "title": "Yalan Dünya",
+        "type": "series",
+        "year": 2012,
+        "category": "Komedi",
+        "director": "Gülse Birsel (Senarist)",
+        "cast": [
+            "Gülse Birsel",
+            "Beyazıt Öztürk",
+            "Olgun Şimşek"
+        ],
+        "summary": "Cihangir'de yan yana dairelerde yaşayan, biri geleneksel diğeri modern iki ailenin ve televizyon dünyasının komik çatışmaları.",
+        "rating": 7.8,
+        "image": "img/yalandunyadizi.jpg"
+    },
+    {
+        "id": 119,
+        "title": "Yaprak Dökümü",
+        "type": "series",
+        "year": 2006,
+        "category": "Dram",
+        "director": "Mesude Erarslan",
+        "cast": [
+            "Halil Ergün",
+            "Güven Hokna",
+            "Fahriye Evcen"
+        ],
+        "summary": "Emekli bir kaymakam ve ailesinin, İstanbul'a taşındıktan sonra değişen değer yargıları ve ekonomik zorluklar karşısında dağılmasını anlatan dizi.",
+        "rating": 6.5,
+        "image": "img/yaprakdökümüdizi.jpg"
     }
 ]
