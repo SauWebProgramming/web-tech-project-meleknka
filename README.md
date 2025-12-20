@@ -10,7 +10,7 @@ Uygulamamda herhangi bir sunucu veya veritabanı kullanmadım. Bunun yerine veri
 
 ## Projemdeki Özellikler
 
-Hocamın belirttiği tüm zorunlu gereksinimleri yerine getirdim ve üzerine kendi merak ettiğim bazı ekstra özellikleri de eklemeye çalıştım.
+Belirtilen tüm zorunlu gereksinimleri yerine getirdim ve üzerine kendi merak ettiğim bazı ekstra özellikleri de eklemeye çalıştım.
 
 ### Yerine Getirdiğim Zorunlu Gereksinimler
 - **Dinamik Sayfa Yapısı**: Sayfalar arası geçişlerde içerik dinamik olarak değişiyor. Detayları bir "Modal" (pencere) içinde gösterdim.
