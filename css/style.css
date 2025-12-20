@@ -633,7 +633,9 @@ footer {
 }
 
 .filter-panel.open {
-    right: 0;
+    right: 0 !important;
+    visibility: visible;
+    opacity: 1;
 }
 
 .filter-header {

@@ -161,9 +161,9 @@ export function populateFilterPanel(data) {
 
     if (!data || data.length === 0) return;
 
-    // Eğer ilk öğe kitapsa başlığı "Yazar" yap
-    const isBook = data[0].type === 'book';
-    directorLabel.innerText = isBook ? 'Yazar' : 'Yönetmen';
+    // Başlığı sabit yap: Yönetmen - Yazar
+    // const isBook = data[0].type === 'book'; // Artık gerek yok
+    directorLabel.innerText = 'Yönetmen - Yazar';
 
     // Benzersiz (tekrarsız) kategori ve yılları bul
     const categories = [...new Set(data.map(item => item.category))].sort();

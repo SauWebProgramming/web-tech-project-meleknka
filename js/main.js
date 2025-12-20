@@ -21,17 +21,6 @@ if (savedTheme === 'light') {
 // Sayfa tamamen yüklendiğinde çalışacak kodlar
 document.addEventListener('DOMContentLoaded', async () => {
     // İlk açılışta tüm verileri getir
-    await loadData('all');
-
-    // Öneri Widget'ını başlat
-    const allGlobalData = await fetchData('all');
-    initSuggestionWidget(allGlobalData);
-
-    // Widget'tan gelen "Detay Aç" isteğini dinle
-    window.addEventListener('openDetailModal', (e) => {
-        openModal(e.detail);
-    });
-
     // Buton tıklamalarını ve tema değişimini ayarla
     setupNavigation();
     setupThemeToggle();
@@ -40,12 +29,32 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupSearchAndFilter();
     setupModal();
 
+    // Widget'tan gelen "Detay Aç" isteğini dinle
+    window.addEventListener('openDetailModal', (e) => {
+        openModal(e.detail);
+    });
+
     // Favoriler güncellendiğinde ekranı yenile (eğer favoriler sekmesindeysek)
     document.addEventListener('favoritesUpdated', () => {
         if (currentTab === 'favorites') {
             loadData('favorites');
         }
     });
+
+    // İlk açılışta tüm verileri getir
+    try {
+        await loadData('all');
+    } catch (err) {
+        console.error("Veri yüklenirken hata oluştu:", err);
+    }
+
+    // Öneri Widget'ını başlat
+    try {
+        const allGlobalData = await fetchData('all');
+        initSuggestionWidget(allGlobalData);
+    } catch (err) {
+        console.error("Öneri widget başlatılamadı:", err);
+    }
 });
 
 // Verileri yükleyip ekrana basan fonksiyon
@@ -161,7 +170,7 @@ function setupSearchAndFilter() {
             const matchesYear = years.length === 0 || years.includes(item.year.toString());
 
             // Yönetmen/Yazar
-            const matchesDirector = directors.length === 0 || directors.includes(item.director);
+            const matchesDirector = directors.length === 0 || directors.includes(item.director) || directors.includes(item.author);
 
             // Puan (Örn: 8+ seçildiyse 8 ve üzeri olanları getir)
             let matchesRating = true;
