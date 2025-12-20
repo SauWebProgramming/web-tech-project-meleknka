@@ -1,6 +1,6 @@
 {
-    "name": "İnteraktif Medya Kütüphanesi",
-    "short_name": "MedyaKütüphanesi",
+    "name": "Neliel",
+    "short_name": "Neliel",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#0f172a",

@@ -1,4 +1,4 @@
-# İnteraktif Medya Kütüphanesi Projesi
+# Neliel Projesi
 
 Merhaba, bu proje Web Teknolojileri dersi ödevim için geliştirdiğim, film, dizi ve kitapları listeleyebileceğimiz interaktif bir web uygulamasıdır.
 
