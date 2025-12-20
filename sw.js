@@ -1,5 +1,5 @@
 // BONUS: PWA - Çevrimdışı (Offline) Çalışma Desteği (Service Worker)
-const CACHE_NAME = 'media-lib-v13'; // Tarayıcı hafızasının ismi (versiyon değiştikçe burayı değiştiririz)
+const CACHE_NAME = 'media-lib-v22'; // Tarayıcı hafızasının ismi (versiyon değiştikçe burayı değiştiririz)
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
